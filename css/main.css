@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "CSpireBold";
+    src: url('fonts/ProximaNovaSoft-Bold.woff') format('woff');
+    font-weight: "normal";
+    font-style: "normal";
+}
+
+@font-face {
+    font-family: "CSpireMed";
+    src: url('fonts/ProximaNovaSoft-Medium.woff') format('woff');
+    font-weight: "normal";
+    font-style: "normal";
+}
+
+@font-face {
+    font-family: "CSpire";
+    src: url('fonts/ProximaNovaSoft-Regular.woff') format('woff');
+    font-weight: "normal";
+    font-style: "normal";
+}
+
+html {
+    font-family: "CSpire" !important;
+}
+
+body {
+    font-family: "CSpire" !important;
+}
+
+.white-text {
+    color: white !important;
+    border-color: white !important;
+}
