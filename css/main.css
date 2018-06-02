@@ -31,3 +31,23 @@ body {
     color: white !important;
     border-color: white !important;
 }
+
+.blue-text {
+    color: #01c0f3 !important;
+}
+
+.navy-text {
+    color: #00306a !important;
+}
+
+.dark-gray-text {
+    color: #434547 !important;
+}
+
+.o1 {
+    opacity: 1 !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff !important;
+}

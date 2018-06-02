@@ -7,8 +7,15 @@
  * # MainCtrl
  * Controller of the cSpireGamingWebApp
  */
-angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope) {
+angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $filter) {
 
+    // Social Links
+    $scope.discordUrl = 'https://discord.gg/95UuTvu';
+    $scope.facebookUrl = '';
+    $scope.instagramUrl = '';
+    $scope.twitterUrl = '';
+
+    // Officer List
     $scope.officers = [{
         name: 'Cole<br>Cochran',
         image: 'cole-cochran.png',
@@ -50,5 +57,23 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope) {
         image: 'ryan-carey.png',
         about: `Donec diam lectus, bibendum vitae quam id, commodo gravida sem. Proin a aliquet mi, eget euismod ex. Donec porttitor magna nulla, in dignissim odio consequat id. Duis molestie lobortis condimentum.`
     }];
+
+
+
+    function shuffle(list) {
+        var m = list.length,
+            t, i;
+
+        while (m) {
+            i = Math.floor(Math.random() * m--);
+            t = list[m];
+            list[m] = list[i];
+            list[i] = t;
+        };
+
+        return list;
+    };
+    
+    $scope.officers = shuffle($scope.officers);
 
 });
