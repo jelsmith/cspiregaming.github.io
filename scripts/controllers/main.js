@@ -8,7 +8,7 @@
  * Controller of the cSpireGamingWebApp
  */
 angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $filter) {
-    
+
     $scope.totalMembers = 173;
 
     // Social Links
@@ -30,15 +30,15 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     }, {
         name: 'Jason<br>Stewart',
         image: 'jason-stewart.png',
-        about: `Donec faucibus elementum sapien vitae dapibus. Pellentesque eu velit pretium, viverra enim ullamcorper, dignissim libero. Quisque est orci, dignissim nec orci quis, placerat pulvinar risus. Sed posuere eget leo ut auctor.`
+        about: `While once a dota 2 addict, <strong>Jason Stewart</strong> is now a recovered couch competitor. Sometimes software developer, always tryhard. Occasionally he admits he's wrong.`
     }, {
         name: 'Jeana<br>Smith',
         image: 'jeana-smith.png',
-        about: `Suspendisse pulvinar, est sed accumsan maximus, quam nibh tristique eros, sed vestibulum erat purus at nulla. Aliquam euismod eros quis ipsum consequat, vitae rutrum diam fermentum. Fusce auctor lacus turpis, et finibus mauris rhoncus venenatis. Fusce sem massa, gravida ac neque quis, posuere sodales nisi.`
+        about: `<strong>Jeana Smith</strong> is a system analyst at C Spire. She thinks Flo Rida's "Welcome to My House" is a very pro-vampire song. She grew up on the Mississippi Gulf Coast and currently resides in Brandon with her awesome hubs, Micah Smith, and two pups, Kirby and Zelda.`
     }, {
         name: 'Jennie<br>Brantley',
         image: 'jennie-brantley.png',
-        about: `Donec pretium magna ut leo pulvinar, pulvinar dignissim elit imperdiet. Sed sapien nulla, commodo sed arcu nec, malesuada pharetra tortor. Vivamus scelerisque erat et ipsum pellentesque, vitae auctor nibh ultricies. Morbi vulputate diam non pharetra tempus.`
+        about: `A caffeine addict with a writing problem, <strong>Jennie Brantley</strong>, is simply a human. Being. She gets paid to be a software application tester, but she will test cheesy jokes, random dares, new board games, and your patience for free.`
     }, {
         name: 'Matt<br>Bolian',
         image: 'matt-bolian.png',
@@ -50,11 +50,11 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     }, {
         name: 'Michael<br>Lamb',
         image: 'michael-lamb.png',
-        about: `uisque tempor libero non massa placerat, eget accumsan sapien tempus. Proin semper est sed mollis tempus. Phasellus accumsan massa eros, sed pulvinar velit porttitor in. Donec nibh urna, interdum vel malesuada quis, faucibus eget odio.`
+        about: `<strong>Michael Lamb</strong> is a software developer during the day and a casual gamer at night. He loves board games and long walks but sticks with board games because the humidity is oppressive.`
     }, {
         name: 'Rashad<br>Collier',
         image: 'rashad-collier.png',
-        about: `Praesent eu ornare orci. Nulla facilisi. Sed tincidunt consequat justo non elementum. Aliquam erat volutpat. Aenean malesuada massa eu leo imperdiet maximus. Pellentesque mollis, nunc id egestas dapibus, libero diam fermentum nisi, sed luctus arcu ante et libero. `
+        about: `Coding, Tech knowledge and everything nerd; these were the ingredients chosen to create the perfect software developer. But Professor Utonium accidentally added an extra ingredient to the concoction: video games. Thus, <strong>Rashad Collier</strong> was born! Using his ultra-super powers, <strong>Rashad</strong> has dedicated his life to smash at fighting games and the forces of evil.`
     }, {
         name: 'Ryan<br>Carey',
         image: 'ryan-carey.png',
@@ -76,7 +76,7 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
 
         return list;
     };
-    
+
     $scope.officers = shuffle($scope.officers);
 
 });

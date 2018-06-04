@@ -44,10 +44,10 @@
                 <ul class="nav navbar-nav navbar-right navbar-uppercase">
 
                     <li class="dropdown hidden-xs">
-                        <button href="#gaia" class="btn btn-danger btn-fill dropdown-toggle" data-toggle="dropdown">
+                        <button href="#gaia" class="btn btn-blue btn-fill dropdown-toggle" data-toggle="dropdown">
                             <i class="fa fa-share-alt"></i> Connect
                         </button>
-                        <ul class="dropdown-menu dropdown-danger">
+                        <ul class="dropdown-menu dropdown-blue">
                             <li>
                                 <a href="{{discordUrl}}" target="_blank"><i class="fab fa-discord"></i> Discord</a>
                             </li>
@@ -121,7 +121,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="info-icon">
-                        <div class="icon text-danger">
+                        <div class="icon text-blue">
                             <!--                            <i class="pe-7s-graph1"></i>-->
                             <i class="fas fa-gamepad"></i>
                         </div>
@@ -131,7 +131,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="info-icon">
-                        <div class="icon text-danger">
+                        <div class="icon text-blue">
                             <!--                            <i class="pe-7s-note2"></i>-->
                             <i class="fas fa-chess-pawn"></i>
                         </div>
@@ -141,7 +141,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="info-icon">
-                        <div class="icon text-danger">
+                        <div class="icon text-blue">
                             <i class="fas fa-desktop"></i>
                             <!--                            <i class="pe-7s-music"></i>-->
                         </div>
@@ -180,7 +180,7 @@
                                                     <h3 class="title">June Meetup</h3>
                                                     <p class="small-text">June 16, 2018 | 12 - 6 pm | C Spire HQ</p>
                                                     <p class="description">Bring your favorite video/table top games along with your consoles/PCs and hang out with some great people! (Please bring your own monitors too.) We'll provide pizza and drinks.</p>
-                                                    <p class="description"><a class="btn btn-danger btn-fill" href="https://goo.gl/forms/dugVj8NzyKpO1AkB2" target="_blank">RSVP here!</a></p>
+                                                    <p class="description"><a class="btn btn-blue btn-fill" href="https://goo.gl/forms/dugVj8NzyKpO1AkB2" target="_blank">RSVP here!</a></p>
                                                     <p class="description"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3367.32056261248!2d-90.14942564895313!3d32.43735330844005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8629d207b2c2666d%3A0x71060b74ef728cfe!2s1018+Highland+Colony+Pkwy%2C+Ridgeland%2C+MS+39157!5e0!3m2!1sen!2sus!4v1527884443275" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
                                                 </div>
                                             </div>
@@ -221,12 +221,31 @@
 
             <div class="tab-content">
                 <div class="tab-pane" id="testimonial{{$index}}" ng-repeat="o in officers" ng-class="{active: $first}">
-                    <p class="description">
+                    <p class="description" ng-bind-html="o.about">
                         {{o.about}}
                     </p>
                 </div>
             </div>
 
+        </div>
+    </div>
+
+
+    <div class="section section-our-team-freebie">
+        <div class="parallax filter">
+            <div class="image" style="background-color: gray">
+            </div>
+            <div class="container">
+                <div class="title-area">
+                    <h2 class="text-white">Sponsors/Vendors</h2>
+                    <div class="separator separator-white white-text"><i class="fas fa-power-off"></i></div>
+                    <p class="description"> Are you interested in sponsoring our group? Maybe you're a vendor who would like to be featured at one of our events? We'd love to talk with you! <a href="{{emailUrl}}" target="_blank" class="blue-text">Email us</a> your best pitch at <a href="{{emailUrl}}" target="_blank" class="blue-text">CSpireGaming@cspire.com</a>.</p>
+                </div>
+
+                <div class="button-get-started">
+                    <a href="{{emailUrl}}" target="_blank" class="btn btn-blue btn-fill btn-lg">Contact</a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -243,7 +262,7 @@
                 </div>
 
                 <div class="button-get-started">
-                    <a href="http://www.cspire.com/careers" target="_blank" class="btn btn-danger btn-fill btn-lg">Careers</a>
+                    <a href="http://www.cspire.com/careers" target="_blank" class="btn btn-blue btn-fill btn-lg">Careers</a>
                 </div>
             </div>
         </div>

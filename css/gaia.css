@@ -184,7 +184,7 @@ a:hover {
     color: #f88f58 !important;
 }
 
-.text-danger {
+.text-blue {
     color: #00c0f3 !important;
 }
 
@@ -373,7 +373,7 @@ body > .navbar-collapse a {
     height: auto;
 }
 
-.avatar-danger {
+.avatar-blue {
     border-color: #00c0f3;
 }
 
@@ -629,68 +629,68 @@ a,
     padding: 10px;
 }
 
-.btn-danger,
-.navbar .navbar-nav > li > a.btn-danger {
+.btn-blue,
+.navbar .navbar-nav > li > a.btn-blue {
     border-color: #00c0f3;
     color: #00c0f3;
 }
 
-.btn-danger:hover,
-.btn-danger:focus,
-.btn-danger:active,
-.btn-danger.active,
-.open > .btn-danger.dropdown-toggle,
-.navbar .navbar-nav > li > a.btn-danger:hover,
-.navbar .navbar-nav > li > a.btn-danger:focus,
-.navbar .navbar-nav > li > a.btn-danger:active,
-.navbar .navbar-nav > li > a.btn-danger.active,
-.open > .navbar .navbar-nav > li > a.btn-danger.dropdown-toggle {
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active,
+.btn-blue.active,
+.open > .btn-blue.dropdown-toggle,
+.navbar .navbar-nav > li > a.btn-blue:hover,
+.navbar .navbar-nav > li > a.btn-blue:focus,
+.navbar .navbar-nav > li > a.btn-blue:active,
+.navbar .navbar-nav > li > a.btn-blue.active,
+.open > .navbar .navbar-nav > li > a.btn-blue.dropdown-toggle {
     background-color: transparent;
     color: #00306b;
     border-color: #01c0f3;
 }
 
-.btn-danger:disabled,
-.btn-danger[disabled],
-.btn-danger.disabled,
-.navbar .navbar-nav > li > a.btn-danger:disabled,
-.navbar .navbar-nav > li > a.btn-danger[disabled],
-.navbar .navbar-nav > li > a.btn-danger.disabled {
+.btn-blue:disabled,
+.btn-blue[disabled],
+.btn-blue.disabled,
+.navbar .navbar-nav > li > a.btn-blue:disabled,
+.navbar .navbar-nav > li > a.btn-blue[disabled],
+.navbar .navbar-nav > li > a.btn-blue.disabled {
     background-color: transparent;
     border-color: #00c0f3;
 }
 
-.btn-danger.btn-fill,
-.navbar .navbar-nav > li > a.btn-danger.btn-fill {
+.btn-blue.btn-fill,
+.navbar .navbar-nav > li > a.btn-blue.btn-fill {
     color: #FFFFFF;
     background-color: #00c0f3;
     opacity: 1;
     filter: alpha(opacity=100);
 }
 
-.btn-danger.btn-fill:hover,
-.btn-danger.btn-fill:focus,
-.btn-danger.btn-fill:active,
-.btn-danger.btn-fill.active,
-.open > .btn-danger.btn-fill.dropdown-toggle,
-.navbar .navbar-nav > li > a.btn-danger.btn-fill:hover,
-.navbar .navbar-nav > li > a.btn-danger.btn-fill:focus,
-.navbar .navbar-nav > li > a.btn-danger.btn-fill:active,
-.navbar .navbar-nav > li > a.btn-danger.btn-fill.active,
-.open > .navbar .navbar-nav > li > a.btn-danger.btn-fill.dropdown-toggle {
+.btn-blue.btn-fill:hover,
+.btn-blue.btn-fill:focus,
+.btn-blue.btn-fill:active,
+.btn-blue.btn-fill.active,
+.open > .btn-blue.btn-fill.dropdown-toggle,
+.navbar .navbar-nav > li > a.btn-blue.btn-fill:hover,
+.navbar .navbar-nav > li > a.btn-blue.btn-fill:focus,
+.navbar .navbar-nav > li > a.btn-blue.btn-fill:active,
+.navbar .navbar-nav > li > a.btn-blue.btn-fill.active,
+.open > .navbar .navbar-nav > li > a.btn-blue.btn-fill.dropdown-toggle {
     background-color: #01c0f3;
     color: #FFFFFF;
     transform: scale(1.03);
     box-shadow: 0 26px 50px -10px rgba(0, 0, 0, 0.38), 0 10px 20px 0px rgba(0, 0, 0, 0.2), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
 }
 
-.btn-danger.btn-fill .caret,
-.navbar .navbar-nav > li > a.btn-danger.btn-fill .caret {
+.btn-blue.btn-fill .caret,
+.navbar .navbar-nav > li > a.btn-blue.btn-fill .caret {
     border-top-color: #FFFFFF;
 }
 
-.btn-danger .caret,
-.navbar .navbar-nav > li > a.btn-danger .caret {
+.btn-blue .caret,
+.navbar .navbar-nav > li > a.btn-blue .caret {
     border-top-color: #00c0f3;
 }
 
@@ -1966,7 +1966,7 @@ fieldset[disabled] .form-control {
     background-color: #f88f58;
 }
 
-.label-danger {
+.label-blue {
     background-color: #00c0f3;
 }
 
@@ -2132,8 +2132,8 @@ fieldset[disabled] .form-control {
     color: #7accb8;
 }
 
-.dropdown-menu.dropdown-danger > li > a:hover,
-.dropdown-menu.dropdown-danger > li > a:focus {
+.dropdown-menu.dropdown-blue > li > a:hover,
+.dropdown-menu.dropdown-blue > li > a:focus {
     color: #00c0f3;
 }
 
@@ -2524,7 +2524,7 @@ fieldset[disabled] .form-control {
     color: #f88f58;
 }
 
-.list-logos-danger .active .client-logo {
+.list-logos-blue .active .client-logo {
     color: #00c0f3;
 }
 
@@ -2975,7 +2975,7 @@ fieldset[disabled] .form-control {
 }
 
 .section-our-team-freebie .container {
-    margin-top: 14vh;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
