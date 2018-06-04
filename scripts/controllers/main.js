@@ -22,7 +22,7 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     $scope.officers = [{
         name: 'Cole<br>Cochran',
         image: 'cole-cochran.png',
-        about: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum id ex laoreet finibus. Sed vel tincidunt enim, a semper ex. Maecenas pretium ac diam sed blandit. Donec varius fermentum aliquam. Donec nec finibus lorem. Nullam lobortis velit ac dui lobortis suscipit.`
+        about: `<strong>Cole Cochran</strong> is a recruiter, gamer, and undercover nerd. @ me, bro. Seriously. @ColeJunior on PS4.`
     }, {
         name: 'Duk<br>Lee',
         image: 'duk-lee.png',

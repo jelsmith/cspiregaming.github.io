@@ -2846,7 +2846,7 @@ fieldset[disabled] .form-control {
 .section-get-started,
 .section-header-freebie,
 .section-our-team-freebie {
-    padding-bottom: 0;
+    padding: 0;
 }
 
 .section-get-started .container,
@@ -2955,7 +2955,7 @@ fieldset[disabled] .form-control {
 .section-our-clients .tab-content {
     text-align: center;
     max-width: 760px;
-    min-height: 130px;
+/*    min-height: 130px;*/
     margin: 0 auto;
 }
 
