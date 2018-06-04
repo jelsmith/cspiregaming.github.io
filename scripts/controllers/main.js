@@ -46,7 +46,7 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     }, {
         name: 'Matt<br>Turner',
         image: 'matt-turner.png',
-        about: `Vestibulum convallis facilisis est vitae malesuada. Nam a fringilla enim, vitae vulputate mi. Praesent condimentum, massa ut mollis congue, lacus mi porttitor est, eu vulputate mi metus in lorem.`
+        about: `<strong>Matthew Turner</strong> is a LTE wizard who uses his powers for good. Once a hardcore MMO raider, he now prefers games with a little less commitment. He also has a passion for all things hardware.`
     }, {
         name: 'Michael<br>Lamb',
         image: 'michael-lamb.png',
