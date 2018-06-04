@@ -26,15 +26,15 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     }, {
         name: 'Duk<br>Lee',
         image: 'duk-lee.png',
-        about: `Sed nisl sem, tristique eu mi at, dapibus dignissim lorem. Morbi interdum sapien a velit bibendum posuere. Fusce accumsan vitae enim sit amet pellentesque. Phasellus nec iaculis justo. Praesent interdum diam quis odio lacinia scelerisque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.`
+        about: `<strong>Duk Lee</strong>, aka Quackers, is a former Army dude who now only "pew pew's" in FPS which he has to stop every 30 minutes due to motion sickness. His current hobbies are: paying his mortgage and ironing his clothes on Sunday afternoons while watching StarCraft games`
     }, {
         name: 'Jason<br>Stewart',
         image: 'jason-stewart.png',
-        about: `While once a dota 2 addict, <strong>Jason Stewart</strong> is now a recovered couch competitor. Sometimes software developer, always tryhard. Occasionally he admits he's wrong.`
+        about: `While once a Dota 2 addict, <strong>Jason Stewart</strong> is now a recovered couch competitor. Sometimes software developer, always tryhard. Occasionally he admits he's wrong.`
     }, {
         name: 'Jeana<br>Smith',
         image: 'jeana-smith.png',
-        about: `<strong>Jeana Smith</strong> is a system analyst at C Spire. She thinks Flo Rida's "Welcome to My House" is a very pro-vampire song. She grew up on the Mississippi Gulf Coast and currently resides in Brandon with her awesome hubs, Micah Smith, and two pups, Kirby and Zelda.`
+        about: `<strong>Jeana Smith</strong> is a system analyst at C Spire. She'd like to make a Legend of Zelda pun here, but she doesn't want to Tri and force it. She grew up on the Mississippi Gulf Coast and currently resides in Brandon with her awesome hubs, Micah, and two pups, Kirby and Zelda.`
     }, {
         name: 'Jennie<br>Brantley',
         image: 'jennie-brantley.png',
