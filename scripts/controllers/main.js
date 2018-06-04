@@ -8,12 +8,15 @@
  * Controller of the cSpireGamingWebApp
  */
 angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $filter) {
+    
+    $scope.totalMembers = 173;
 
     // Social Links
     $scope.discordUrl = 'https://discord.gg/95UuTvu';
     $scope.facebookUrl = 'https://www.facebook.com/cspiregaming';
     $scope.instagramUrl = 'https://www.instagram.com/cspiregaming/';
     $scope.twitterUrl = 'https://twitter.com/cspiregaming';
+    $scope.emailUrl = 'mailto:cspiregaming@cspire.com';
 
     // Officer List
     $scope.officers = [{
