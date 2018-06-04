@@ -377,10 +377,12 @@ body > .navbar-collapse a {
     border-color: #00c0f3;
 }
 
+/*
 *::selection {
     background: #00306b;
     color: #FFFFFF;
 }
+*/
 
 .form-control {
     margin-bottom: 1.875em;
