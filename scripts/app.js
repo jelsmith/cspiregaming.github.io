@@ -8,7 +8,10 @@
  *
  * Main module of the application.
  */
-angular.module('cSpireGamingWebApp', ['ngAnimate', 'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch']).config(function ($routeProvider, $sceDelegateProvider) {
+angular.module('cSpireGamingWebApp', ['ngAnimate', 'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch']).config(function ($routeProvider, $sceDelegateProvider, $locationProvider) {
+    
+    $locationProvider.hashPrefix('');
+    
     $routeProvider
         .when('/', {
             templateUrl: 'views/main.html',
