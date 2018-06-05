@@ -60,7 +60,7 @@
                                 <a href="{{twitterUrl}}" target="_blank"><i class="fab fa-twitter-square"></i> Twitter</a>
                             </li>
                             <li>
-                                <a href="{{emailUrl}}" target="_blank"><i class="far fa-envelope"></i> Email</a>
+                                <a href="{{emailUrl}}"><i class="far fa-envelope"></i> Email</a>
                             </li>
                         </ul>
                     </li>
@@ -78,7 +78,7 @@
                         <a href="{{twitterUrl}}" target="_blank" class="dark-gray-text"><i class="fab fa-twitter-square"></i> Twitter</a>
                     </li>
                     <li class="hidden-sm hidden-md hidden-lg">
-                        <a href="{{emailUrl}}" target="_blank" class="dark-gray-text"><i class="far fa-envelope"></i> Email</a>
+                        <a href="{{emailUrl}}" class="dark-gray-text"><i class="far fa-envelope"></i> Email</a>
                     </li>
                 </ul>
             </div>
@@ -232,11 +232,11 @@
                 <div class="title-area">
                     <h2 class="text-white">Sponsors & Vendors</h2>
                     <div class="separator separator-white white-text"><i class="fas fa-power-off"></i></div>
-                    <p class="description"> Are you interested in sponsoring our group? Maybe you're a vendor who would like to be featured at one of our events? We'd love to talk with you! <a href="{{emailUrl}}" target="_blank" class="white-text"><b>Email us</b></a> your best pitch at <a href="{{emailUrl}}" target="_blank" class="white-text"><b>CSpireGaming@cspire.com</b></a>.</p>
+                    <p class="description"> Are you interested in sponsoring our group? Maybe you're a vendor who would like to be featured at one of our events? We'd love to talk with you! <a href="{{emailUrl}}" class="white-text"><b>Email us</b></a> your best pitch at <a href="{{emailUrl}}" class="white-text"><b>CSpireGaming@cspire.com</b></a>.</p>
                 </div>
 
                 <div class="button-get-started">
-                    <a href="{{emailUrl}}" target="_blank" class="btn btn-white btn-fill btn-lg">Contact</a>
+                    <a href="{{emailUrl}}" class="btn btn-white btn-fill btn-lg">Contact</a>
                 </div>
             </div>
         </div>
@@ -271,7 +271,7 @@
                         <nav>
                             <ul>
                                 <li>
-                                    <a href="{{emailUrl}}" target="_blank">Contact Us</a>
+                                    <a href="{{emailUrl}}">Contact Us</a>
                                 </li>
                             </ul>
                         </nav>
@@ -344,17 +344,17 @@
     </footer>
 
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120386744-1"></script>
     <script>
-        ! function(A, n, g, u, l, a, r) {
-            A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
-                    (A[l].q = A[l].q || []).push(arguments)
-                }, A[l].l = +new Date, a = n.createElement(g),
-                r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
-        }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        window.dataLayer = window.dataLayer || [];
 
-        ga('create', 'UA-XXXXX-X');
-        ga('send', 'pageview');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-120386744-1');
 
     </script>
 

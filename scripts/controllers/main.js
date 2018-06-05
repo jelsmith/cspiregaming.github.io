@@ -42,7 +42,7 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     }, {
         name: 'Matt<br>Bolian',
         image: 'matt-bolian.png',
-        about: `Vivamus congue congue velit, eget tristique mi tincidunt et. Nullam iaculis tellus ut lorem sollicitudin aliquam. Phasellus purus tortor, iaculis vel porta non, congue eget leo. Donec malesuada ex ipsum, quis tempor felis porta sit amet. Nunc pretium quam sit amet egestas malesuada.`
+        about: `<strong>Matt Bolian</strong> is a world traveler who is inspired by Amelia Clarke's fatal journey. His blossoming career as a Secret Hitler professional player demonstrates his cunning ability to read a crowd, lie with a straight face, and foment anarchy.`
     }, {
         name: 'Matt<br>Turner',
         image: 'matt-turner.png',
@@ -58,7 +58,7 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     }, {
         name: 'Ryan<br>Carey',
         image: 'ryan-carey.png',
-        about: `Donec diam lectus, bibendum vitae quam id, commodo gravida sem. Proin a aliquet mi, eget euismod ex. Donec porttitor magna nulla, in dignissim odio consequat id. Duis molestie lobortis condimentum.`
+        about: `<strong>Ryan Carey</strong> is a superhero whose abilities include levitating inches off the ground, turning his nose invisible, and transforming into a single cheeto.`
     }];
 
 
