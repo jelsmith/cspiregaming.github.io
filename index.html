@@ -202,7 +202,7 @@
 
             <ul class="nav nav-text" role="tablist">
                 <li ng-repeat="o in officers" ng-class="{active: $first}">
-                    <a href="#testimonial{{$index}}" role="tab" data-toggle="tab">
+                    <a href="#officer{{$index}}" role="tab" data-toggle="tab">
                         <div class="image-clients">
                             <img alt="..." class="img-circle" src="img/faces/{{o.image}}" />
                             <h3 ng-bind-html="o.name">{{o.name}}</h3>
@@ -213,7 +213,7 @@
 
 
             <div class="tab-content">
-                <div class="tab-pane" id="testimonial{{$index}}" ng-repeat="o in officers" ng-class="{active: $first}">
+                <div class="tab-pane" id="officer{{$index}}" ng-repeat="o in officers" ng-class="{active: $first}">
                     <p class="description" ng-bind-html="o.about">
                         {{o.about}}
                     </p>
