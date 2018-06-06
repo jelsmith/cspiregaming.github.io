@@ -20,7 +20,7 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     $scope.emailUrl = 'mailto:cspiregaming@cspire.com';
 
     // Event List
-    // You may leave any field in the event object blank. 
+    // You may leave any field in the event object blank.
     $scope.events = [{
         title: 'June Meetup',
         subtitle: 'June 16, 2018 | 12 - 6 pm | C Spire HQ',
@@ -53,7 +53,7 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     }, {
         name: 'Matt<br>Bolian',
         image: 'matt-bolian.png',
-        about: `<strong>Matt Bolian</strong> is a world traveler who is inspired by Amelia Clarke's fatal journey. His blossoming career as a Secret Hitler professional player demonstrates his cunning ability to read a crowd, lie with a straight face, and foment anarchy.`
+        about: `<strong>Matt Bolian</strong> is a world traveler who is inspired by Amelia Clarke's fatal journey. His blossoming career as a Secret Hitler (board game) professional player demonstrates his cunning ability to read a crowd, lie with a straight face, and foment anarchy.`
     }, {
         name: 'Matt<br>Turner',
         image: 'matt-turner.png',
