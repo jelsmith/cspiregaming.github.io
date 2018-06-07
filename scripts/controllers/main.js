@@ -53,7 +53,7 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     }, {
         name: 'Matt<br>Bolian',
         image: 'matt-bolian.png',
-        about: `<strong>Matt Bolian</strong> is a world traveler who is inspired by Amelia Clarke's fatal journey. His blossoming career as a Secret Hitler (board game) professional player demonstrates his cunning ability to read a crowd, lie with a straight face, and foment anarchy.`
+        about: `<strong>Matt Bolian</strong> was a Military Intelligence Officer who now uses his experience to drive C Spire's development and unlock the company's full potential. He thrives under pressure so challenge him to any game any time.`
     }, {
         name: 'Matt<br>Turner',
         image: 'matt-turner.png',
