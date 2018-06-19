@@ -33,7 +33,7 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     //        rsvpUrl: 'https://goo.gl/forms/dugVj8NzyKpO1AkB2',
     //        googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3367.32056261248!2d-90.14942564895313!3d32.43735330844005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8629d207b2c2666d%3A0x71060b74ef728cfe!2s1018+Highland+Colony+Pkwy%2C+Ridgeland%2C+MS+39157!5e0!3m2!1sen!2sus!4v1527884443275'
     //    }
-    
+
     /* Example event above. DO NOT DELETE */
 
     // Officer List
@@ -74,9 +74,13 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
         image: 'rashad-collier.png',
         about: `Coding, tech knowledge and everything nerd; these were the ingredients chosen to create the perfect software developer. But Professor Utonium accidentally added an extra ingredient to the concoction: video games. Thus, <strong>Rashad Collier</strong> was born! Using his ultra-super powers, <strong>Rashad</strong> has dedicated his life to smash at fighting games and the forces of evil.`
     }, {
-        name: 'Ryan<br>Carey',
-        image: 'ryan-carey.png',
-        about: `<strong>Ryan Carey</strong> is a superhero whose abilities include levitating inches off the ground, turning his nose invisible, and transforming into a single cheeto.`
+         name: 'Ryan<br>Carey',
+         image: 'ryan-carey.png',
+         about: `<strong>Ryan Carey</strong> is a superhero whose abilities include levitating inches off the ground, turning his nose invisible, and transforming into a single cheeto.`
+    }, {
+         name: 'Thomas<br>Grout',
+         image: 'thomas-grout.png',
+         about: `Former CS:GO Global Elite and current title-holder for World’s Least Interesting Person. Everywhere <strong>Thomas Grout</strong> goes, phones deactivate themselves to avoid hearing him speak.`
     }];
 
 
