@@ -10,7 +10,7 @@
 angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $filter) {
 
     // Other
-    $scope.totalMembers = 186;
+    $scope.totalMembers = 198;
 
     // Social Links
     $scope.discordUrl = 'https://discord.gg/95UuTvu';
