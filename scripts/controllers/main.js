@@ -10,7 +10,7 @@
 angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $filter) {
 
     // Other
-    $scope.totalMembers = 234;
+    $scope.totalMembers = 264;
 
     // Social Links
     $scope.discordUrl = 'https://discord.gg/95UuTvu';
@@ -19,6 +19,7 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     $scope.twitterUrl = 'https://twitter.com/cspiregaming';
     $scope.meetupUrl = 'https://www.meetup.com/C-Spire-Gaming-Club-Meetup/';
     $scope.emailUrl = 'mailto:cspiregaming@cspire.com';
+    $scope.subscribeUrl = 'https://docs.google.com/forms/d/e/1FAIpQLScxlvs7cCmJcRvM_2DAM0G6cruxFQc_2kmYRstIAGaAnO1_IQ/viewform?usp=sf_link';
 
     // Event List
     // You may leave any field in the event object blank.
