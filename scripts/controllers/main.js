@@ -23,13 +23,7 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
 
     // Event List
     // You may leave any field in the event object blank.
-    $scope.events = [{
-                         title: 'September Meetup',
-                         subtitle: 'September 15, 2018 | 12 - 6 pm | C Spire HQ',
-                         description: `Bring your favorite video/table top games along with your consoles/PCs and hang out with some great people! (Please bring your own monitors too.) We'll provide pizza and drinks.`,
-                         rsvpUrl: 'https://goo.gl/forms/9muzVAkQlOIBjPMp1',
-                         googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3367.32056261248!2d-90.14942564895313!3d32.43735330844005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8629d207b2c2666d%3A0x71060b74ef728cfe!2s1018+Highland+Colony+Pkwy%2C+Ridgeland%2C+MS+39157!5e0!3m2!1sen!2sus!4v1527884443275'
-                     }];
+    $scope.events = [];
 
     /* Example event below. DO NOT DELETE */
 
