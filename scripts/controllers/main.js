@@ -23,7 +23,13 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
 
     // Event List
     // You may leave any field in the event object blank.
-    $scope.events = [];
+    $scope.events = [{
+                                 title: 'October Meetup',
+                                 subtitle: 'October 20, 2018 | 12 - 6 pm | C Spire HQ',
+                                 description: `Bring your favorite video/table top games along with your consoles/PCs and hang out with some great people! (Please bring your own monitors too.) We'll provide pizza and drinks.`,
+                                 rsvpUrl: 'https://goo.gl/forms/bLMUfSGtucFzv3s02',
+                                 googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3367.32056261248!2d-90.14942564895313!3d32.43735330844005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8629d207b2c2666d%3A0x71060b74ef728cfe!2s1018+Highland+Colony+Pkwy%2C+Ridgeland%2C+MS+39157!5e0!3m2!1sen!2sus!4v1527884443275'
+                             }];
 
     /* Example event below. DO NOT DELETE */
 
@@ -46,10 +52,6 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
         name: 'Duk<br>Lee',
         image: 'duk-lee.png',
         about: `<strong>Duk Lee</strong>, aka Quackers, is a former Army dude who now only "pew pew's" in FPS which he has to stop every 30 minutes due to motion sickness. His current hobbies are: paying his mortgage and ironing his clothes on Sunday afternoons while watching StarCraft games`
-    }, {
-        name: 'Jason<br>Stewart',
-        image: 'jason-stewart.png',
-        about: `While once a Dota 2 addict, <strong>Jason Stewart</strong> is now a recovered couch competitor. Sometimes software developer, always tryhard. Occasionally he admits he's wrong.`
     }, {
         name: 'Jeana<br>Smith',
         image: 'jeana-smith.png',
@@ -78,10 +80,6 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
          name: 'Ryan<br>Carey',
          image: 'ryan-carey.png',
          about: `<strong>Ryan Carey</strong> is a superhero whose abilities include levitating inches off the ground, turning his nose invisible, and transforming into a single cheeto.`
-    }, {
-         name: 'Thomas<br>Grout',
-         image: 'thomas-grout.png',
-         about: `Former CS:GO Global Elite and current title-holder for World’s Least Interesting Person. Everywhere <strong>Thomas Grout</strong> goes, phones deactivate themselves to avoid hearing him speak.`
     }];
 
 
