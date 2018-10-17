@@ -77,9 +77,13 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
         image: 'rashad-collier.png',
         about: `Coding, tech knowledge and everything nerd; these were the ingredients chosen to create the perfect software developer. But Professor Utonium accidentally added an extra ingredient to the concoction: video games. Thus, <strong>Rashad Collier</strong> was born! Using his ultra-super powers, <strong>Rashad</strong> has dedicated his life to smash at fighting games and the forces of evil.`
     }, {
-         name: 'Ryan<br>Carey',
-         image: 'ryan-carey.png',
-         about: `<strong>Ryan Carey</strong> is a superhero whose abilities include levitating inches off the ground, turning his nose invisible, and transforming into a single cheeto.`
+        name: 'Ryan<br>Carey',
+        image: 'ryan-carey.png',
+        about: `<strong>Ryan Carey</strong> is a superhero whose abilities include levitating inches off the ground, turning his nose invisible, and transforming into a single cheeto.`
+    }, {
+        name: 'Tommy<br>Naugle',
+        image: 'tommy-naugle.png',
+        about: `<strong>Tommy Naugle</strong> is a data scientist at C Spire and Mississippi's favorite TensorBro.`
     }];
 
 
