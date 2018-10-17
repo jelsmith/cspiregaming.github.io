@@ -83,7 +83,7 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     }, {
         name: 'Tommy<br>Naugle',
         image: 'tommy-naugle.png',
-        about: `<strong>Tommy Naugle</strong> is a data scientist at C Spire and Mississippi's favorite TensorBro.`
+        about: `<strong>Tommy Naugle</strong> is a data scientist at C Spire and Mississippi's favorite TensorBro. He enjoys playing with Pokemon cards when his wife allows it.`
     }];
 
 
