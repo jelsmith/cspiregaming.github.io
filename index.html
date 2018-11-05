@@ -190,7 +190,7 @@
                                                 <div class="description">
                                                     <h3 class="title" ng-if="e.title">{{e.title}}</h3>
                                                     <p class="small-text" ng-if="e.subtitle">{{e.subtitle}}</p>
-                                                    <p class="description">Bring your favorite video/table top games along with your consoles/PCs and hang out with some great people! (Please bring your own monitors too.) We'll provide pizza and drinks.</p>
+                                                    <p class="description" ng-bind-html="e.description">{{e.description}}</p>
                                                     <p class="description" ng-if="e.rsvpUrl"><a class="btn btn-blue btn-fill" href="{{e.rsvpUrl}}" target="_blank">RSVP here!</a></p>
                                                     <p class="description" ng-if="e.googleMapsUrl"><iframe src="{{e.googleMapsUrl}}" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
                                                 </div>

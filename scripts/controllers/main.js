@@ -26,7 +26,7 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     $scope.events = [{
         title: 'November Meetup - GamesGiving Edition',
         subtitle: 'November 17, 2018 | 12 - 6 pm | C Spire HQ, 6th Floor',
-        description: `Bring your favorite video/table top games along with your consoles/PCs and hang out with some great people! (Please bring your own monitors too.) We'll provide pizza and drinks. \n\nWe're celebrating GamesGiving! This means you'll have the opportunity to donate your gently used, video games, game systems, or table-top/board games to us, and we'll deliver these to some awesome homes including the Sunnybrook Children's Home here in Ridgeland! Please donate if you're able.`,
+        description: `Bring your favorite video/table top games along with your consoles/PCs and hang out with some great people! (Please bring your own monitors too.) We'll provide pizza and drinks. <br><br><b>We're celebrating GamesGiving!</b> <br>This means you'll have the opportunity to donate your gently used, video games, game systems, or table-top/board games to us, and we'll deliver these to some awesome homes including the Sunnybrook Children's Home here in Ridgeland! Please donate if you're able.`,
         rsvpUrl: 'https://d.io/cspiregaming1118/c090f0',
         googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3367.32056261248!2d-90.14942564895313!3d32.43735330844005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8629d207b2c2666d%3A0x71060b74ef728cfe!2s1018+Highland+Colony+Pkwy%2C+Ridgeland%2C+MS+39157!5e0!3m2!1sen!2sus!4v1527884443275'
      }];
