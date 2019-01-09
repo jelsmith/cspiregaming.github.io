@@ -83,13 +83,13 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
         name: 'Tommy<br>Naugle',
         image: 'tommy-naugle.png',
         about: `<strong>Tommy Naugle</strong> is a data scientist at C Spire and Mississippi's favorite TensorBro. He enjoys playing with Pokemon cards when his wife allows it.`
-    }, {
-        name: 'Chris<br>Ellis',
-        image: 'chris-ellis.png',
-        about: `<strong>Chris Ellis</strong> By day, Chris Ellis is a Sales Operations Specialist. By night, he maintains a 1:47 KDR (Hey, we said these people LOVED gaming, not that they were particularly good at it). <strong>Chris Ellis</strong> is one of those weirdos who actually enjoys playing Monopoly. He would love to tell you about his cats.`
-    }, {
+    },/* {
+       // name: 'Chris<br>Ellis',
+     //   image: 'chris-ellis.png',
+       // about: `<strong>Chris Ellis</strong> By day, Chris Ellis is a Sales Operations Specialist. By night, he maintains a 1:47 KDR (Hey, we said these people LOVED gaming, not that they were particularly good at it). <strong>Chris Ellis</strong> is one of those weirdos who actually enjoys playing Monopoly. He would love to tell you about his cats.`
+    }, */{
         name: 'Rob<br>Jones',
-        image: 'rob-jones.png',
+        image: 'rob-jones.jpeg',
         about: `“I am the hope of the universe; I am the hope of all living things that cry out for peace; I am protector of the innocent; I am the light in the darkness; I am truth. Ally to good—nightmare to people who resist cord cutting and amazing 1Gbps internet speeds provided by C Spire.” - <strong>Rob Jones </strong>`
     }];
 
