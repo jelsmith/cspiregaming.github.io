@@ -26,7 +26,7 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
         title: 'January Meetup',
         subtitle: 'January 19, 2018 | 12 - 6 pm | C Spire HQ, 6th Floor',
         description: `Bring your favorite board and/or video games as well as monitors and hang out with some awesome people around C Spire. Feel free to bring children or guests. (Please note you are responsible for any guests you bring.) <br><br><b>SEE FULL DETAILS IN THE TICKET LINK BELOW</b>`,
-        rsvpUrl: 'https://d.io/cspiregaming1218',
+        rsvpUrl: 'https://d.io/cspiregaming0119',
         googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3367.32056261248!2d-90.14942564895313!3d32.43735330844005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8629d207b2c2666d%3A0x71060b74ef728cfe!2s1018+Highland+Colony+Pkwy%2C+Ridgeland%2C+MS+39157!5e0!3m2!1sen!2sus!4v1527884443275'
                }];
 
