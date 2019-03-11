@@ -17,7 +17,8 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     $scope.facebookUrl = 'https://www.facebook.com/cspiregaming';
     $scope.instagramUrl = 'https://www.instagram.com/cspiregaming/';
     $scope.twitterUrl = 'https://twitter.com/cspiregaming';
-    $scope.emailUrl = 'mailto:cspiregaming@cspire.com';
+    // This link is separated to fool spam bots
+    $scope.emailUrl = 'mai' + 'lto:csp' + 'iregaming@' + 'cspire.com';
     $scope.subscribeUrl = 'http://eepurl.com/gjdvGT';
 //    $scope.subscribeUrl = 'https://docs.google.com/forms/d/e/1FAIpQLScxlvs7cCmJcRvM_2DAM0G6cruxFQc_2kmYRstIAGaAnO1_IQ/viewform?usp=sf_link';
 
