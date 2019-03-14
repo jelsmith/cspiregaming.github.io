@@ -97,6 +97,10 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
         name: 'Mat Brown',
         image: 'mat-brown.jpg',
         about: '<strong>Mathew Brown</strong> is a project manager extraordinnaire with a penchant for making grown men cry in Super Smash Bros. Ultimate. He relocated to Nashville from Santa Barabara, California, and thinks the south is new and interesting.'
+    }, {
+        name: 'Marcus Johnson',
+        image: 'marcus-johnson.jpg',
+        about: 'There was never a <strong>Marcus Johnson</strong> more dedicated than this one. Maybe he\'s a jack of all trades, but that doesn\'t mean he\'s not a master at NBA 2k games. You can find him on a real life court or a digital one if you are brave enough to challenge him.'
     }];
 
 
