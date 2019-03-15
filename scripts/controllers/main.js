@@ -30,7 +30,7 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
         subtitle: 'March 16, 2018 | 12 - 6 pm | C Spire HQ, 6th Floor',
         description: `Bring your favorite board and/or video games as well as monitors and hang out with some awesome people around C Spire. Feel free to bring children or guests. (Please note you are responsible for any guests you bring.) <br><br><b>SEE FULL DETAILS IN THE TICKET LINK BELOW</b>`,
         rsvpUrl: 'http://rsvp.cspiregaming.com',
-        googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3367.32056261248!2d-90.14942564895313!3d32.43735330844005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8629d207b2c2666d%3A0x71060b74ef728cfe!2s1018+Highland+Colony+Pkwy%2C+Ridgeland%2C+MS+39157!5e0!3m2!1sen!2sus!4v1527884443275'
+        googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3367.302949692359!2d-90.14876303455075!3d32.43782485850925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889a4fd75c35116d%3A0xdb39af80dc9a1b47!2sC+Spire!5e0!3m2!1sen!2sus!4v1552573649044'
                }];
 
     /* Example event below. DO NOT DELETE */
@@ -93,7 +93,15 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     }, */{
         name: 'Rob<br>Jones',
         image: 'rob-jones.jpeg',
-        about: `“I am the hope of the universe; I am the hope of all living things that cry out for peace; I am protector of the innocent; I am the light in the darkness; I am truth. Ally to good—nightmare to people who resist cord cutting and amazing 1Gbps internet speeds provided by C Spire.” - <strong>Rob Jones </strong>`
+        about: `“I am the hope of the universe; I am the hope of all living things that cry out for peace; I am protector of the innocent; I am the light in the darkness; I am truth. Ally to good — nightmare to people who resist cord cutting and amazing 1Gbps internet speeds provided by C Spire.” - <strong>Rob Jones </strong>`
+    }, {
+        name: 'Mat Brown',
+        image: 'mat-brown.jpg',
+        about: '<strong>Mathew Brown</strong> is a project manager extraordinnaire with a penchant for making grown men cry in Super Smash Bros. Ultimate. He relocated to Nashville from Santa Barabara, California, and thinks the south is new and interesting.'
+    }, {
+        name: 'Marcus Johnson',
+        image: 'marcus-johnson.jpg',
+        about: 'There was never a <strong>Marcus Johnson</strong> more dedicated than this one. Maybe he\'s a jack of all trades, but that doesn\'t mean he\'s not a master at NBA 2k games. You can find him on a real life court or a digital one if you are brave enough to challenge him.'
     }];
 
 
