@@ -85,6 +85,12 @@
                     <li class="hidden-sm hidden-md hidden-lg">
                         <a href="{{emailUrl}}" class="dark-gray-text"><i class="far fa-envelope"></i>&nbsp;Email</a>
                     </li>
+
+                    <a href="index.html#events">
+                      <button class="btn btn-blue btn-fill">
+                        <i class="fa fa-calendar"></i> Upcoming Events
+                      </button>
+                    </a>
                 </ul>
             </div>
         </div>
@@ -180,48 +186,49 @@
                         </div>
                     </div>
 
-                    <div class="events" ng-if="events.length > 0">
-                        <div class="row" ng-repeat="e in events">
+                    <a name="events">
+                      <div class="events" ng-if="events.length > 0">
+                          <div class="row" ng-repeat="e in events">
+                              <div class="col-md-10 col-md-offset-1">
+                                  <div class="row">
+                                      <div class="col-md-12">
+                                          <div class="card card-member">
+                                              <div class="content">
+                                                  <div class="description">
+                                                      <h3 class="title" ng-if="e.title">{{e.title}}</h3>
+                                                      <p class="small-text" ng-if="e.subtitle">{{e.subtitle}}</p>
+                                                      <p class="description" ng-bind-html="e.description">{{e.description}}</p>
+                                                      <p class="description" ng-if="e.rsvpUrl"><a class="btn btn-blue btn-fill" href="{{e.rsvpUrl}}" target="_blank">Get your ticket now!</a></p>
+                                                      <p class="description" ng-if="e.googleMapsUrl"><iframe src="{{e.googleMapsUrl}}" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
                             <div class="col-md-10 col-md-offset-1">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="card card-member">
-                                            <div class="content">
-                                                <div class="description">
-                                                    <h3 class="title" ng-if="e.title">{{e.title}}</h3>
-                                                    <p class="small-text" ng-if="e.subtitle">{{e.subtitle}}</p>
-                                                    <p class="description" ng-bind-html="e.description">{{e.description}}</p>
-                                                    <p class="description" ng-if="e.rsvpUrl"><a class="btn btn-blue btn-fill" href="{{e.rsvpUrl}}" target="_blank">Get your ticket now!</a></p>
-                                                    <p class="description" ng-if="e.googleMapsUrl"><iframe src="{{e.googleMapsUrl}}" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-10 col-md-offset-1">
-                            <div class="row">
-                              <div class="col-md-12">
-                                <div class="card card-member">
-                                  <div class="content">
-                                    <div class="description">
-                                      <h1 class="title">New Regional Tournament!</h1>
-                                      <img src="img/smash_event.png" style="max-height: 150; max-inline-size: 50%;" />
-                                      <h3 class="title">Sign up to receive updates for our tournament happening this June!</h3>
-                                      <a class="btn btn-blue btn-fill" href="https://michaellamb912927.typeform.com/to/MK0zMQ" data-mode="popup"
-                                        data-submit-close-delay="5" target="_blank">I am interested!</a>
-                                      <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="card card-member">
+                                    <div class="content">
+                                      <div class="description">
+                                        <h1 class="title">New Regional Tournament!</h1>
+                                        <img src="img/smash_event.png" style="max-height: 150; max-inline-size: 50%;" />
+                                        <h3 class="title">Sign up to receive updates for our tournament happening this June!</h3>
+                                        <a class="btn btn-blue btn-fill" href="https://michaellamb912927.typeform.com/to/MK0zMQ" data-mode="popup"
+                                          data-submit-close-delay="5" target="_blank">I am interested!</a>
+                                        <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                    </div>
+                      </div>
+                    </a>
 
                 </div>
             </div>
