@@ -11,6 +11,17 @@
 angular.module('cSpireGamingWebApp', ['ngAnimate', 'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch']).config(function ($routeProvider, $sceDelegateProvider, $locationProvider) {
     
     $locationProvider.hashPrefix('');
+
+    if (window.history && window.history.pushState) {
+        $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: true,
+            rewriteLinks: false
+        });
+    }
+    else {
+        $locationProvider.html5Mode(false);
+    }
     
     $routeProvider
         .when('/', {
@@ -29,3 +40,8 @@ angular.module('cSpireGamingWebApp', ['ngAnimate', 'ngCookies', 'ngResource', 'n
     'https://www.google.com/**'
   ]);
 });
+
+//angular.module('cSpireGamingWebApp').config(['$locationProvider', function ($locationProvider) {
+//
+//
+//}]);
