@@ -117,6 +117,13 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     $scope.scrollTo = function (id, offset) {
         console.log('attempting to scroll to element: ' + id);
 
+        try {
+            console.log('closing sidenav just in case');
+            $('html').removeClass('nav-open');
+        } catch (error) {
+            console.log('sidenav doesn\'t exist. ignoring error.');
+        }
+
         if (offset === undefined) offset = 0;
         var target = document.getElementById(id);
         var targetPosition = getPosition(target);
