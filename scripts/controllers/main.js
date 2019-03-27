@@ -28,9 +28,19 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     $scope.events = [{
         title: 'April Meetup',
         subtitle: 'April 27, 2018 | 12 - 6 pm | C Spire HQ, 6th Floor',
+        imagePath: undefined,
         description: `Bring your favorite board and/or video games as well as monitors and hang out with some awesome people around C Spire. Feel free to bring children or guests. (Please note you are responsible for any guests you bring.) <br><br><b>SEE FULL DETAILS IN THE TICKET LINK BELOW</b>`,
-        rsvpUrl: 'http://rsvp.cspiregaming.com',
+        actionButtonText: 'Get your ticket now!',
+        actionButtonUrl: 'http://rsvp.cspiregaming.com',
         googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3367.302949692359!2d-90.14876303455075!3d32.43782485850925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889a4fd75c35116d%3A0xdb39af80dc9a1b47!2sC+Spire!5e0!3m2!1sen!2sus!4v1552573649044'
+               }, {
+               title: 'Weekly Regional Tournaments',
+                       subtitle: undefined,
+                       imagePath: 'img/smash_event.png',
+                       description: `Sign up to receive updates for our tournament happening this June!`,
+        actionButtonText: 'I am interested!',
+                       actionButtonUrl: 'https://michaellamb912927.typeform.com/to/MK0zMQ',
+                       googleMapsUrl: undefined
                }];
 
     /* Example event below. DO NOT DELETE */
@@ -104,7 +114,41 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
         about: 'There was never a <strong>Marcus Johnson</strong> more dedicated than this one. Maybe he\'s a jack of all trades, but that doesn\'t mean he\'s not a master at NBA 2k games. You can find him on a real life court or a digital one if you are brave enough to challenge him.'
     }];
 
+    $scope.scrollTo = function (id, offset) {
+        console.log('attempting to scroll to element: ' + id);
 
+        if (offset === undefined) offset = 0;
+        var target = document.getElementById(id);
+        var targetPosition = getPosition(target);
+        var navBar = document.getElementById('nav');
+        var navBarHeight = navBar.offsetHeight;
+        if (targetPosition.y === navBarHeight && id !== 'home') {
+            console.log('target already in frame');
+        } else {
+            $('html, body').animate({
+                scrollTop: (target.offsetTop - navBarHeight - offset),
+                easing: 'slow'
+            }, 1000, function () {
+                // Callback after animation
+            });
+        }
+    };
+
+    function getPosition(element) {
+        var xPosition = 0;
+        var yPosition = 0;
+
+        while (element) {
+            xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
+            yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
+            element = element.offsetParent;
+        }
+
+        return {
+            x: xPosition,
+            y: yPosition
+        };
+    }
 
     function shuffle(list) {
         var m = list.length,

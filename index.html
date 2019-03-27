@@ -27,7 +27,7 @@
 <body ng-app="cSpireGamingWebApp" ng-controller="MainCtrl">
 
 
-    <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" color-on-scroll="200">
+    <nav id="nav" class="navbar navbar-default navbar-transparent navbar-fixed-top" color-on-scroll="200">
         <div class="container">
             <div class="navbar-header">
                 <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
@@ -86,11 +86,14 @@
                         <a href="{{emailUrl}}" class="dark-gray-text"><i class="far fa-envelope"></i>&nbsp;Email</a>
                     </li>
 
-                    <a href="index.html#events">
-                      <button class="btn btn-blue btn-fill">
-                        <i class="fa fa-calendar"></i> Upcoming Events
-                      </button>
-                    </a>
+                  <button ng-click="scrollTo('upcoming-events')" class="btn btn-blue btn-fill">
+                    <i class="fa fa-share-alt"></i> Upcoming Events
+                  </button>
+                    <!--<a href="index.html#events">-->
+                      <!--<button class="btn btn-blue btn-fill">-->
+                        <!--<i class="fa fa-calendar"></i> Upcoming Events-->
+                      <!--</button>-->
+                    <!--</a>-->
                 </ul>
             </div>
         </div>
@@ -156,7 +159,7 @@
 
 
 
-    <div class="section section-our-team-freebie">
+    <div id="upcoming-events" class="section section-our-team-freebie">
         <div class="parallax filter">
             <div class="image" style="background-image:url('img/gaming-pattern.png'); min-height: 750px;">
             </div>
@@ -197,8 +200,9 @@
                                                   <div class="description">
                                                       <h3 class="title" ng-if="e.title">{{e.title}}</h3>
                                                       <p class="small-text" ng-if="e.subtitle">{{e.subtitle}}</p>
+                                                      <p class="small-text my-25" ng-if="e.imagePath"><img src="{{e.imagePath}}" style="max-height: 150; max-inline-size: 50%;" /></p>
                                                       <p class="description" ng-bind-html="e.description">{{e.description}}</p>
-                                                      <p class="description" ng-if="e.rsvpUrl"><a class="btn btn-blue btn-fill" href="{{e.rsvpUrl}}" target="_blank">Get your ticket now!</a></p>
+                                                      <p class="description" ng-if="e.actionButtonUrl"><a class="btn btn-blue btn-fill" href="{{e.actionButtonUrl}}" target="_blank">{{e.actionButtonText}}</a></p>
                                                       <p class="description" ng-if="e.googleMapsUrl"><iframe src="{{e.googleMapsUrl}}" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
                                                   </div>
                                               </div>
@@ -206,26 +210,6 @@
                                       </div>
                                   </div>
                               </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-md-10 col-md-offset-1">
-                              <div class="row">
-                                <div class="col-md-12">
-                                  <div class="card card-member">
-                                    <div class="content">
-                                      <div class="description">
-                                        <h1 class="title">New Regional Tournament!</h1>
-                                        <img src="img/smash_event.png" style="max-height: 150; max-inline-size: 50%;" />
-                                        <h3 class="title">Sign up to receive updates for our tournament happening this June!</h3>
-                                        <a class="btn btn-blue btn-fill" href="https://michaellamb912927.typeform.com/to/MK0zMQ" data-mode="popup"
-                                          data-submit-close-delay="5" target="_blank">I am interested!</a>
-                                        <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
                           </div>
                       </div>
                     </a>

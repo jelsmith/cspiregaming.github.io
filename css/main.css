@@ -49,6 +49,15 @@ body {
     opacity: 1 !important;
 }
 
+.mt-10 {
+    margin-top: 10px;
+}
+
+.my-25 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff !important;
 }
