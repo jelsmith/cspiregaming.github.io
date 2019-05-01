@@ -26,8 +26,8 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     // Event List
     // You may leave any field in the event object blank.
     $scope.events = [{
-        title: 'April Meetup',
-        subtitle: 'April 27, 2019 | 12 - 6 pm | C Spire HQ, 6th Floor',
+        title: 'May Meetup',
+        subtitle: 'May 18, 2019 | 12 - 6 pm | C Spire HQ, 6th Floor',
         imagePath: undefined,
         description: `Bring your favorite board and/or video games as well as monitors and hang out with some awesome people around C Spire. Feel free to bring children or guests. (Please note you are responsible for any guests you bring.) <br><br><b>SEE FULL DETAILS IN THE TICKET LINK BELOW</b>`,
         actionButtonText: 'Get your ticket now!',
