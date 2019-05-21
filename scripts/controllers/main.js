@@ -26,12 +26,12 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     // Event List
     // You may leave any field in the event object blank.
     $scope.events = [{
-        title: 'May Meetup',
-        subtitle: 'May 18, 2019 | 12 - 6 pm | C Spire HQ, 6th Floor',
+        title: 'June Meetup',
+        subtitle: 'June 15, 2019 | 12 - 6 pm | C Spire HQ, 6th Floor',
         imagePath: undefined,
-        description: `Bring your favorite board and/or video games as well as monitors and hang out with some awesome people around C Spire. Feel free to bring children or guests. (Please note you are responsible for any guests you bring.) <br><br><b>SEE FULL DETAILS IN THE TICKET LINK BELOW</b>`,
-        actionButtonText: 'Get your ticket now!',
-        actionButtonUrl: 'http://rsvp.cspiregaming.com',
+        description: `Bring your favorite board and/or video games as well as monitors and hang out with some awesome people around C Spire. Feel free to bring children or guests. (Please note you are responsible for any guests you bring.) <br><br><b>DETAILS TBD.</b>`,
+//        actionButtonText: 'Get your ticket now!',
+//        actionButtonUrl: 'http://rsvp.cspiregaming.com',
         googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3367.302949692359!2d-90.14876303455075!3d32.43782485850925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889a4fd75c35116d%3A0xdb39af80dc9a1b47!2sC+Spire!5e0!3m2!1sen!2sus!4v1552573649044'
                }, {
                title: 'New Regional Tournament',
@@ -46,12 +46,14 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     /* Example event below. DO NOT DELETE */
 
     //    {
-    //                  title: 'November Meetup - GamesGiving Edition',
-    //                  subtitle: 'November 17, 2018 | 12 - 6 pm | C Spire HQ, 6th Floor',
-    //                  description: `Bring your favorite video/table top games along with your consoles/PCs and hang out with some great people! (Please bring your own monitors too.) We'll provide pizza and drinks. <br><br><b>We're celebrating GamesGiving!</b> <br>This means you'll have the opportunity to donate your gently used, video games, game systems, or table-top/board games to us, and we'll deliver these to some awesome homes including the Sunnybrook Children's Home here in Ridgeland! Please donate if you're able.`,
-    //                  rsvpUrl: 'https://d.io/cspiregaming1118/c090f0',
-    //                  googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3367.32056261248!2d-90.14942564895313!3d32.43735330844005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8629d207b2c2666d%3A0x71060b74ef728cfe!2s1018+Highland+Colony+Pkwy%2C+Ridgeland%2C+MS+39157!5e0!3m2!1sen!2sus!4v1527884443275'
-    //               }
+//                  title: 'May Meetup',
+//                  subtitle: 'May 18, 2019 | 12 - 6 pm | C Spire HQ, 6th Floor',
+//                  imagePath: undefined,
+//                  description: `Bring your favorite board and/or video games as well as monitors and hang out with some awesome people around C Spire. Feel free to bring children or guests. (Please note you are responsible for any guests you bring.) <br><br><b>SEE FULL DETAILS IN THE TICKET LINK BELOW</b>`,
+//                  actionButtonText: 'Get your ticket now!',
+//                  actionButtonUrl: 'http://rsvp.cspiregaming.com',
+//                  googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3367.302949692359!2d-90.14876303455075!3d32.43782485850925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889a4fd75c35116d%3A0xdb39af80dc9a1b47!2sC+Spire!5e0!3m2!1sen!2sus!4v1552573649044'
+//                         }
 
     /* Example event above. DO NOT DELETE */
 
@@ -61,10 +63,6 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
         image: 'cole-cochran.png',
         about: `<strong>Cole Cochran</strong> is a recruiter, gamer, and undercover nerd. @ me, bro. Seriously. @ColeJunior on PS4.`
     }, {
-        name: 'Duk<br>Lee',
-        image: 'duk-lee.png',
-        about: `<strong>Duk Lee</strong>, aka Quackers, is a former Army dude who now only "pew pew's" in FPS which he has to stop every 30 minutes due to motion sickness. His current hobbies are: paying his mortgage and ironing his clothes on Sunday afternoons while watching StarCraft games`
-    }, {
         name: 'Jeana<br>Smith',
         image: 'jeana-smith.png',
         about: `<strong>Jeana Smith</strong> is a system analyst at C Spire. She'd like to make a Legend of Zelda pun here, but she doesn't want to Tri and force it. She grew up on the Mississippi Gulf Coast and currently resides in Brandon with her awesome hubs, Micah, and two pups, Kirby and Zelda.`
@@ -72,10 +70,6 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
         name: 'Jennie<br>Brantley',
         image: 'jennie-brantley.png',
         about: `A caffeine addict with a writing problem, <strong>Jennie Brantley</strong>, is simply a human. Being. She gets paid to be a software application tester, but she will test cheesy jokes, random dares, new board games, and your patience for free.`
-    }, {
-        name: 'Matt<br>Bolian',
-        image: 'matt-bolian.png',
-        about: `<strong>Matt Bolian</strong> was a Military Intelligence Officer who now uses his experience to drive C Spire's development and unlock the company's full potential. He thrives under pressure so challenge him to any game any time.`
     }, {
         name: 'Matt<br>Turner',
         image: 'matt-turner.png',
