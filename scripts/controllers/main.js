@@ -34,12 +34,12 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
 //        actionButtonUrl: 'http://rsvp.cspiregaming.com',
         googleMapsUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3367.302949692359!2d-90.14876303455075!3d32.43782485850925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889a4fd75c35116d%3A0xdb39af80dc9a1b47!2sC+Spire!5e0!3m2!1sen!2sus!4v1552573649044'
                }, {
-               title: 'New Regional Tournament',
-                       subtitle: 'June 15, 2019',
+               title: 'Super Smash Bros. Ultimate Tournament',
+                       subtitle: 'June 29-30, 2019 at the Mississippi Comic Con',
                        imagePath: 'img/smash_event.png',
                        description: `Sign up to receive updates for our tournament happening this June!`,
-        actionButtonText: 'I am interested!',
-                       actionButtonUrl: 'https://michaellamb912927.typeform.com/to/MK0zMQ',
+                       actionButtonText: 'I am interested!',
+                       actionButtonUrl: 'http://eepurl.com/gjdvGT',
                        googleMapsUrl: undefined
                }];
 
@@ -66,10 +66,6 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
         name: 'Jeana<br>Smith',
         image: 'jeana-smith.png',
         about: `<strong>Jeana Smith</strong> is a system analyst at C Spire. She'd like to make a Legend of Zelda pun here, but she doesn't want to Tri and force it. She grew up on the Mississippi Gulf Coast and currently resides in Brandon with her awesome hubs, Micah, and two pups, Kirby and Zelda.`
-    }, {
-        name: 'Jennie<br>Brantley',
-        image: 'jennie-brantley.png',
-        about: `A caffeine addict with a writing problem, <strong>Jennie Brantley</strong>, is simply a human. Being. She gets paid to be a software application tester, but she will test cheesy jokes, random dares, new board games, and your patience for free.`
     }, {
         name: 'Matt<br>Turner',
         image: 'matt-turner.png',
