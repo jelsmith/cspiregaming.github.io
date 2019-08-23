@@ -75,9 +75,9 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
         image: 'rob-jones.jpeg',
         about: `“I am the hope of the universe; I am the hope of all living things that cry out for peace; I am protector of the innocent; I am the light in the darkness; I am truth. Ally to good — nightmare to people who resist cord cutting and amazing 1Gbps internet speeds provided by C Spire.” - <strong>Rob Jones </strong>`
     }, {
-        name: 'Mat Brown',
-        image: 'mat-brown.jpg',
-        about: '<strong>Mathew Brown</strong> is a project manager extraordinnaire with a penchant for making grown men cry in Super Smash Bros. Ultimate. He relocated to Nashville from Santa Barabara, California, and thinks the south is new and interesting.'
+        name: 'Burrell Gee',
+        image: 'burrell-gee.jpg',
+        about: '<strong>Burrell Gee</strong> is a system analyst and polymath who also loves all things gaming. At his best behind the GM Screen or crushing his foes on the KB&M, and as an occasional console dabbler, Burrell has been gaming since the days of Zork!'
     }, {
         name: 'Marcus Johnson',
         image: 'marcus-johnson.jpg',
