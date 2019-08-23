@@ -77,7 +77,7 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     }, {
         name: 'Burrell Gee',
         image: 'burrell-gee.jpg',
-        about: '<strong>Burrell Gee</strong> is a system analyst and polymath who also loves all things gaming. At his best behind the GM Screen or crushing his foes on the KB&M, and as an occasional console dabbler, Burrell has been gaming since the days of Zork!'
+        about: '<strong>Burrell Gee</strong> is a system analyst and polymath who also loves all things gaming. At his best behind the GM Screen or crushing his foes on the KB&M, and as an occasional console dabbler, <strong>Burrell</strong> has been gaming since the days of Zork!'
     }, {
         name: 'Marcus Johnson',
         image: 'marcus-johnson.jpg',
