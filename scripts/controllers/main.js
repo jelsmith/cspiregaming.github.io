@@ -71,7 +71,11 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     }, {
         name: 'Wade Meena',
         image: 'wade-meena.jpeg',
-        about: 'The <strong>Wade Meena</strong>: a driven fighter interested in taking on all challenges and challengers. <strong>Wade<strong> eats, drinks, and sleeps Team C Spire.'
+        about: 'The <strong>Wade Meena</strong>: a driven fighter interested in taking on all challenges and challengers. <strong>Wade</strong> eats, drinks, and sleeps Team C Spire.'
+    }, {
+        name: 'Charles McEuen',
+        image: 'charles-mceuen.jpg',
+        about: '<strong>Super Chuck</strong> aka <strong>Charles</strong> keeps himself busy with C Spire Business business but is known to enjoy getting up to some shenanigans in C Spire Gaming business. His speciality is N64 gaming.'
     }];
 
     $scope.scrollTo = function (id, offset) {
