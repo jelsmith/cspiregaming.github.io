@@ -71,7 +71,7 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     }, {
         name: 'Wade Meena',
         image: 'wade-meena.jpeg',
-        about: 'The Wade Meena: a driven fighter interested in taking on all challenges and challengers. Wade eats, drinks, and sleeps Team C Spire.'
+        about: 'The <strong>Wade Meena</strong>: a driven fighter interested in taking on all challenges and challengers. <strong>Wade<strong> eats, drinks, and sleeps Team C Spire.'
     }];
 
     $scope.scrollTo = function (id, offset) {
