@@ -5,8 +5,7 @@ version 0.16.0.
 
 ## Build & development
 
-Run `grunt` for building and `grunt serve` for preview.
+Follow GitHub's guide for installing and running the project locally:
+https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll
 
-## Testing
-
-Running `grunt test` will run the unit tests with karma.
+The `run.sh` file can be used to quickly launch the app on your local.
