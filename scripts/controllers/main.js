@@ -68,6 +68,10 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
         name: 'Marcus Johnson',
         image: 'marcus-johnson.jpg',
         about: 'There was never a <strong>Marcus Johnson</strong> more dedicated than this one. Maybe he\'s a jack of all trades, but that doesn\'t mean he\'s not a master at NBA 2k games. You can find him on a real life court or a digital one if you are brave enough to challenge him.'
+    }, {
+        name: 'Wade Meena',
+        image: 'wade-meena.jpeg',
+        about: 'The Wade Meena: a driven fighter interested in taking on all challenges and challengers. Wade eats, drinks, and sleeps Team C Spire.'
     }];
 
     $scope.scrollTo = function (id, offset) {
