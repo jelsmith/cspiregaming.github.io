@@ -43,7 +43,7 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     $scope.officers = [{
         name: 'Jeana<br>Smith',
         image: 'jeana-smith.png',
-        about: `<strong>Jeana Smith</strong> is a system analyst at C Spire. She'd like to make a Legend of Zelda pun here, but she doesn't want to Tri and force it.`
+        about: `<strong>Jeana Smith</strong> is the team lead of mobile app development at C Spire. She'd like to make a Legend of Zelda pun here, but she doesn't want to Tri and Force it.`
     }, {
         name: 'Matt<br>Turner',
         image: 'matt-turner.png',
@@ -59,11 +59,11 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     }, {
         name: 'Chris<br>Ellis',
         image: 'chris-ellis.jpg',
-        about: `By day, <strong>Chris Ellis</strong> is a Sales Operations Specialist. By night, he maintains a 1:47 KDR (Hey, we said these people LOVED gaming, not that they were particularly good at it). <strong>Chris Ellis</strong> is one of those weirdos who actually enjoys playing Monopoly. He would love to tell you about his cats.`
+        about: `By day, <strong>Chris Ellis</strong> is a project manager. By night, he maintains a 1:47 KDR (Hey, we said these people LOVED gaming, not that they were particularly good at it). <strong>Chris Ellis</strong> is one of those weirdos who actually enjoys playing Monopoly. He would love to tell you about his cats.`
     }, {
         name: 'Burrell Gee',
         image: 'burrell-gee.jpg',
-        about: '<strong>Burrell Gee</strong> is a system analyst and polymath who also loves all things gaming. At his best behind the GM Screen or crushing his foes on the KB&M, and as an occasional console dabbler, <strong>Burrell</strong> has been gaming since the days of Zork!'
+        about: '<strong>Burrell Gee</strong> is a team lead and polymath who also loves all things gaming. At his best behind the GM Screen or crushing his foes on the KB&M, and as an occasional console dabbler, <strong>Burrell</strong> has been gaming since the days of Zork!'
     }, {
         name: 'Marcus Johnson',
         image: 'marcus-johnson.jpg',
