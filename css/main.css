@@ -11,21 +11,21 @@
 
 @font-face {
   font-family: "Comfortaa";
-  src: url('/css/fonts/Comfortaa-Medium.ttf') format('ttf');
+  src: url('css/fonts/Comfortaa-Medium.ttf') format('ttf');
   /*font-weight: "normal";*/
   /*font-style: "normal";*/
 }
 
 @font-face {
   font-family: "Tablet Gothic Narrow";
-  src: url('/css/fonts/Tablet Gothic Narrow W02 SmBd.ttf') format('ttf');
+  src: url('css/fonts/Tablet Gothic Narrow W02 SmBd.ttf') format('ttf');
   /*font-weight: "normal";*/
   /*font-style: "normal";*/
 }
 
 @font-face {
   font-family: "Gotham", sans-serif;
-  src: url('/css/fonts/GothamRnd-Book.otf') format('otf');
+  src: url('css/fonts/GothamRnd-Book.otf') format('otf');
   /*font-weight: "normal";*/
   /*font-style: "normal";*/
 }
