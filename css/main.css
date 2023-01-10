@@ -1,70 +1,212 @@
-@font-face {
-    font-family: "CSpireBold";
-    src: url('fonts/ProximaNovaSoft-Bold.woff') format('woff');
-    font-weight: "normal";
-    font-style: "normal";
+:root {
+  --c-spire-blue: #00C0F3;
+  --steel-blue: #0F3D58;
+  --orange: #F04F23;
+  --cool-gray: #98A4AE;
+  --light-stone: #E4E8F0;
+  --white: #ffffff;
+  --slate-black: #131E29;
+  --green: #489D4D;
 }
 
 @font-face {
-    font-family: "CSpireMed";
-    src: url('fonts/ProximaNovaSoft-Medium.woff') format('woff');
-    font-weight: "normal";
-    font-style: "normal";
+  font-family: "Comfortaa";
+  src: url('fonts/Comfortaa-Medium.ttf') format('ttf');
+  /*font-weight: "normal";*/
+  /*font-style: "normal";*/
 }
 
 @font-face {
-    font-family: "CSpire";
-    src: url('fonts/ProximaNovaSoft-Regular.woff') format('woff');
-    font-weight: "normal";
-    font-style: "normal";
+  font-family: "Tablet Gothic Narrow";
+  src: url('fonts/Tablet Gothic Narrow W02 SmBd.ttf') format('ttf');
+  /*font-weight: "normal";*/
+  /*font-style: "normal";*/
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url('fonts/GothamRnd-Book.otf') format('otf');
+  /*font-weight: "normal";*/
+  /*font-style: "normal";*/
 }
 
 html {
-    font-family: "CSpire" !important;
-    background: #01c0f3;
+  font-family: "Gotham";
+  background: var(--c-spire-blue);
+  font-size: 16pt;
+  color: var(--steel-blue);
 }
 
 body {
-    font-family: "CSpire" !important;
+  font-family: "Gotham";
+  font-size: 16pt;
+  color: var(--steel-blue);
+}
+
+h1 {
+  font-family: "Comfortaa";
+  font-size: 36pt;
+  color: var(--steel-blue);
+  text-transform: lowercase !important;
+  margin-top: 10px;
+}
+
+h2 {
+  font-family: "Tablet Gothic Narrow";
+  font-size: 22pt;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: "Tablet Gothic Narrow";
+  font-size: 17pt;
+  font-weight: bold;
+  color: var(--steel-blue);
+}
+
+sub-head {
+  font-family: "Tablet Gothic Narrow";
+  font-size: 17pt;
+  font-weight: bold;
 }
 
 .white-text {
-    color: white !important;
-    border-color: white !important;
+  color: white !important;
+  border-color: white !important;
 }
 
 .blue-text {
-    color: #01c0f3 !important;
+  color: var(--c-spire-blue) !important;
 }
 
 .navy-text {
-    color: #00306a !important;
+  color: var(--steel-blue) !important;
 }
 
 .dark-gray-text {
-    color: #434547 !important;
+  color: var(--cool-gray) !important;
 }
 
 .o1 {
-    opacity: 1 !important;
+  opacity: 1 !important;
 }
 
 .mt-10 {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .my-25 {
-    margin-top: 25px;
-    margin-bottom: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+nav:not(.navbar-transparent) {
+  background-color: var(--steel-blue);
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff !important;
+  background-color: var(--steel-blue) !important;
 }
 
 
 @media (max-width: 768px) {
-    .p-sm-14 {
-        padding: 14px !important;
-    }
+  .p-sm-14 {
+    padding: 14px !important;
+  }
+}
+
+.btn {
+  font-family: "Tablet Gothic Narrow";
+  font-weight: bold;
+  font-size: 14pt;
+  text-transform: capitalize;
+  padding: 10px 30px;
+  border-radius: 1.75em;
+}
+
+.btn-orange,
+.navbar .navbar-nav > li > a.btn-orange {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.btn-orange, .btn-orange.btn-fill {
+  background-color: var(--orange);
+  color: var(--white);
+  border-color: var(--orange);
+}
+
+.btn-orange.btn-fill:hover,
+.btn-orange.btn-fill:focus,
+.btn-orange.btn-fill:active,
+.btn-orange.btn-fill.active,
+.open > .btn-blue.btn-fill.dropdown-toggle,
+.navbar .navbar-nav > li > a.btn-orange.btn-fill:hover,
+.navbar .navbar-nav > li > a.btn-orange.btn-fill:focus,
+.navbar .navbar-nav > li > a.btn-orange.btn-fill:active,
+.navbar .navbar-nav > li > a.btn-orange.btn-fill.active,
+.open > .navbar .navbar-nav > li > a.btn-orange.btn-fill.dropdown-toggle {
+  background-color: var(--orange);
+  color: var(--white);
+  border-color: var(--orange);
+  /*transform: scale(1.03);*/
+  /*box-shadow: 0 26px 50px -10px rgba(0, 0, 0, 0.38), 0 10px 20px 0px rgba(0, 0, 0, 0.2), 0 15px 10px -10px rgba(0, 0, 0, 0.2);*/
+}
+
+.btn-orange.btn-fill .caret,
+.navbar .navbar-nav > li > a.btn-orange.btn-fill .caret {
+  border-top-color: #FFFFFF;
+}
+
+.btn-orange .caret,
+.navbar .navbar-nav > li > a.btn-orange .caret {
+  border-top-color: #00c0f3;
+}
+
+.footer {
+  background-color: var(--steel-blue);
+}
+
+.footer nav > ul a:not(.btn),
+.footer .title {
+  color: var(--white);
+}
+
+.footer nav > ul a:not(.btn):hover, .footer nav > ul a:not(.btn):focus {
+  color: var(--orange);
+}
+
+.filter:before {
+  background: linear-gradient(0deg, var(--c-spire-blue) 0%, var(--steel-blue) 0%);
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+#officers > li.active a .image-clients img {
+  opacity: 1;
+  box-shadow: 0px 0px 0px 8px #00c0f3;
+  transition: 0.2s linear;
+}
+
+@media (max-width: 768px) {
+  .orange-stripes {
+    height: 50%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .show-on-small {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .show-on-medium-and-up {
+    display: block !important;
+  }
 }

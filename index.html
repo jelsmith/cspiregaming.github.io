@@ -2,433 +2,350 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="utf-8">
-    <base href="/">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
+  <meta charset="utf-8">
+  <base href="/">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>C Spire Gaming</title>
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="css/gaia.css" rel="stylesheet" />
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- endbuild -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>C&nbsp;Spire Gaming</title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+  <link href="css/bootstrap.css" rel="stylesheet"/>
+  <link href="css/gaia.css" rel="stylesheet"/>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css(.) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- endbuild -->
 
-    <!--     Fonts and icons     -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 
 <body ng-app="cSpireGamingWebApp" ng-controller="MainCtrl">
 
 
-    <nav id="nav" class="navbar navbar-default navbar-transparent navbar-fixed-top" color-on-scroll="200">
-        <div class="container">
-            <div class="navbar-header">
-                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar bar1"></span>
-                    <span class="icon-bar bar2"></span>
-                    <span class="icon-bar bar3"></span>
-                </button>
-                <a href="#" class="navbar-brand">C Spire Gaming</a>
-            </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right navbar-uppercase">
-
-                    <li class="dropdown hidden-xs">
-                        <button href="#gaia" class="btn btn-blue btn-fill dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-share-alt"></i> Connect
-                        </button>
-                        <ul class="dropdown-menu dropdown-blue">
-                            <li>
-                              <a href="{{discordUrl}}" target="_blank"><i class="fab fa-discord"></i>&nbsp;Discord</a>
-                            </li>
-                            <li>
-                              <a href="{{uptimeStatusUrl}}" target="_blank"><i class="fas fa-cube"></i>&nbsp;Minecraft Server Status</a>
-                            </li>
-                            <li>
-                              <a href="{{uptimeStatusUrl}}" target="_blank"><i class="fas fa-code"></i>&nbsp;Screeps Server Status</a>
-                            </li>
-                            <li>
-                              <a href="{{twitchUrl}}" target="_blank"><i class="fab fa-twitch"></i>&nbsp;Twitch</a>
-                            </li>
-                            <li>
-                                <a href="{{facebookUrl}}" target="_blank"><i class="fab fa-facebook-square"></i>&nbsp;Facebook</a>
-                            </li>
-                            <li>
-                                <a href="{{instagramUrl}}" target="_blank"><i class="fab fa-instagram"></i>&nbsp;Instagram</a>
-                            </li>
-                            <li>
-                                <a href="{{subscribeUrl}}"><i class="fas fa-bell"></i>&nbsp;Subscribe</a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="hidden-sm hidden-md hidden-lg">
-                      <a href="{{discordUrl}}" target="_blank" class="dark-gray-text"><i class="fab fa-discord"></i>&nbsp;Discord</a>
-                    </li>
-                    <li class="hidden-sm hidden-md hidden-lg">
-                      <a href="{{uptimeStatusUrl}}" target="_blank" class="dark-gray-text"><i class="fas fa-cube"></i>&nbsp;Minecraft Server Status</a>
-                    </li>
-                    <li class="hidden-sm hidden-md hidden-lg">
-                      <a href="{{uptimeStatusUrl}}" target="_blank" class="dark-gray-text"><i class="fas fa-code"></i>&nbsp;Screeps Server Status</a>
-                    </li>
-                    <li class="hidden-sm hidden-md hidden-lg">
-                      <a href="{{twitchUrl}}" target="_blank" class="dark-gray-text"><i class="fab fa-twitch"></i>&nbsp;Twitch</a>
-                    </li>
-                    <li class="hidden-sm hidden-md hidden-lg">
-                        <a href="{{facebookUrl}}" target="_blank" class="dark-gray-text"><i class="fab fa-facebook-square"></i>&nbsp;Facebook</a>
-                    </li>
-                    <li class="hidden-sm hidden-md hidden-lg">
-                        <a href="{{instagramUrl}}" target="_blank" class="dark-gray-text"><i class="fab fa-instagram"></i>&nbsp;Instagram</a>
-                    </li>
-                    <li class="hidden-sm hidden-md hidden-lg">
-                        <a href="{{subscribeUrl}}" class="dark-gray-text"><i class="fas fa-bell"></i>&nbsp;Subscribe</a>
-                    </li>
-
-                  <button ng-click="scrollTo('upcoming-events')" class="btn btn-blue btn-fill p-sm-14">
-                    <i class="fa fa-calendar"></i> Upcoming Events
-                  </button>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-
-    <div class="section section-header section-header-small">
-        <div class="parallax filter">
-            <div class="image" style="background-image: url('img/gaming-pattern.png')">
-            </div>
-            <div class="container">
-                <div class="content">
-                    <div class="title-area">
-                        <img class="img-responsive" style="display: inline;" src="img/c-spire-gaming-logo_v3.png">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-    <div class="section">
-        <div class="container">
-            <div class="row">
-                <div class="title-area">
-                    <h2>Who We Are</h2>
-                    <div class="separator separator-blue"><i class="fas fa-power-off"></i></div>
-                    <p class="description">Our purpose is to provide a fun community for C Spire team members, friends, and family to enjoy games of all types together. We're up to <strong>{{totalMembers}} awesome members</strong>! If you're interested in joining please connect with us on either <a href="{{discordUrl}}" target="_blank" class="blue-text">Discord</a>,  <a href="{{twitchUrl}}" target="_blank" class="blue-text">Twitch</a>, <a href="{{facebookUrl}}" target="_blank" class="blue-text">Facebook</a>, or <a href="{{instagramUrl}}" target="_blank" class="blue-text">Instagram</a>. Be sure to <a href="{{subscribeUrl}}" target="_blank" class="blue-text">subscribe</a> to our email list to stay in the know with all things C Spire Gaming!</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="info-icon">
-                        <div class="icon text-blue">
-                            <i class="fas fa-gamepad"></i>
-                        </div>
-                        <h3>Video Games</h3>
-                        <p class="description">Bring a console or computer, or join in on other players' systems to try out new games.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="info-icon">
-                        <div class="icon text-blue">
-                            <i class="fas fa-chess-pawn"></i>
-                        </div>
-                        <h3>Tabletop</h3>
-                        <p class="description">Form a group to play your favorite tabletop game from home or try your hand at someone else's game of choice.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="info-icon">
-                        <div class="icon text-blue">
-                            <i class="fas fa-desktop"></i>
-                        </div>
-                        <h3>eSports</h3>
-                        <p class="description">Test your skills in the monthly tournament and compete in the group league between gaming events.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div id="upcoming-events" class="section section-our-team-freebie">
-        <div class="parallax filter">
-            <div class="image" style="background-image:url('img/gaming-pattern.png'); min-height: 750px;">
-            </div>
-            <div class="container">
-                <div class="content">
-                    <div class="row">
-                        <div class="title-area">
-                            <h2 class="white-text">Upcoming Events</h2>
-                            <div class="separator separator-white white-text"><i class="fas fa-power-off"></i></div>
-                            <p class="description white-text" ng-if="events.length > 0">Come hang out!</p>
-                        </div>
-                    </div>
-
-                    <div class="no-events" ng-if="events.length <= 0">
-                        <div class="row">
-                            <div class="col-md-10 col-md-offset-1">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <h3 class="title">Not enough XP to load next event. Keep playing!</h3>
-                                        <div class="button-get-started">
-                                            <a href="{{subscribeUrl}}" class="btn btn-white btn-fill btn-lg" target="_blank">Get An Invite</a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div name="events">
-                      <div class="events" ng-if="events.length > 0">
-                          <div class="row" ng-repeat="e in events">
-                              <div class="col-md-10 col-md-offset-1">
-                                  <div class="row">
-                                      <div class="col-md-12">
-                                          <div class="card card-member">
-                                              <div class="content">
-                                                  <div class="description">
-                                                      <h3 class="title" ng-if="e.title">{{e.title}}</h3>
-                                                      <p class="small-text" ng-if="e.subtitle">{{e.subtitle}}</p>
-                                                      <p class="small-text my-25 row" ng-if="e.imagePath">
-                                                            <img class="col-sm-12 col-md-6 col-md-offset-3" src="{{e.imagePath}}" />
-                                                      </p>
-                                                      <p class="description" ng-bind-html="e.description">{{e.description}}</p>
-                                                      <p class="description" ng-if="e.actionButtonUrl"><a class="btn btn-blue btn-fill" href="{{e.actionButtonUrl}}" target="_blank">{{e.actionButtonText}}</a></p>
-                                                      <p class="description" ng-if="e.googleMapsUrl"><iframe src="{{e.googleMapsUrl}}" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></p>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="section section-our-clients-freebie">
-        <div class="container">
-            <div class="title-area">
-                <h5 class="subtitle text-gray">Our awesome, randomly presented</h5>
-                <h2>C Spire Gaming Officers</h2>
-                <div class="separator separator-blue"><i class="fas fa-power-off"></i></div>
-            </div>
-
-            <ul class="nav nav-text" role="tablist">
-                <li ng-repeat="o in officers" ng-class="{active: $first}">
-                    <a href="#officer{{$index}}" role="tab" data-toggle="tab">
-                        <div class="image-clients">
-                            <img alt="..." class="img-circle" src="img/faces/{{o.image}}" />
-                            <h3 ng-bind-html="o.name">{{o.name}}</h3>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-
-
-            <div class="tab-content">
-                <div class="tab-pane" id="officer{{$index}}" ng-repeat="o in officers" ng-class="{active: $first}">
-                    <p class="description" ng-bind-html="o.about">
-                        {{o.about}}
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-<!--    <div class="section section-our-team-freebie">-->
-<!--        <div class="parallax filter">-->
-<!--            <div class="image" style="background-image: url('img/gaming-pattern.png'); min-height: 750px;">-->
+<!--    <nav id="nav" class="navbar navbar-default navbar-fixed-top">-->
+<!--        <div class="container">-->
+<!--            <div class="navbar-header">-->
+<!--                <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">-->
+<!--                    <span class="sr-only">Toggle navigation</span>-->
+<!--                    <span class="icon-bar bar1"></span>-->
+<!--                    <span class="icon-bar bar2"></span>-->
+<!--                    <span class="icon-bar bar3"></span>-->
+<!--                </button>-->
+<!--&lt;!&ndash;                <a href="#" class="navbar-brand">C&nbsp;Spire Gaming</a>&ndash;&gt;-->
 <!--            </div>-->
-<!--            <div class="container">-->
-<!--                <div class="title-area">-->
-<!--                    <h2 class="text-white">Sponsors &#38; Vendors</h2>-->
-<!--                    <div class="separator separator-white white-text"><i class="fas fa-power-off"></i></div>-->
-<!--                    <p class="description"> Are you interested in sponsoring our group? Maybe you're a vendor who would like to be featured at one of our events? We'd love to talk with you! <a href="{{emailUrl}}" class="white-text"><b>Email us</b></a> your best pitch at <a href="{{emailUrl}}" class="white-text"><b>CSpireGaming@cspire.com</b></a>.</p>-->
-<!--                </div>-->
+<!--            <div class="collapse navbar-collapse">-->
+<!--                <ul class="nav navbar-nav navbar-right navbar-uppercase">-->
 
-<!--                <div class="button-get-started">-->
-<!--                    <a href="{{emailUrl}}" class="btn btn-white btn-fill btn-lg">Contact</a>-->
-<!--                </div>-->
+<!--                    <li class="dropdown hidden-xs">-->
+<!--                        <button href="#gaia" class="btn btn-orange btn-fill dropdown-toggle" data-toggle="dropdown">-->
+<!--                            <i class="fa fa-share-alt"></i> CONNECT-->
+<!--                        </button>-->
+<!--                        <ul class="dropdown-menu dropdown-blue">-->
+<!--                            <li>-->
+<!--                              <a href="{{discordUrl}}" target="_blank"><i class="fab fa-discord"></i>&nbsp;Discord</a>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                              <a href="{{uptimeStatusUrl}}" target="_blank"><i class="fas fa-cube"></i>&nbsp;Minecraft Server Status</a>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                              <a href="{{uptimeStatusUrl}}" target="_blank"><i class="fas fa-code"></i>&nbsp;Screeps Server Status</a>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                              <a href="{{twitchUrl}}" target="_blank"><i class="fab fa-twitch"></i>&nbsp;Twitch</a>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="{{facebookUrl}}" target="_blank"><i class="fab fa-facebook-square"></i>&nbsp;Facebook</a>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="{{instagramUrl}}" target="_blank"><i class="fab fa-instagram"></i>&nbsp;Instagram</a>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="{{subscribeUrl}}"><i class="fas fa-bell"></i>&nbsp;Subscribe</a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+
+<!--                    <li class="hidden-sm hidden-md hidden-lg">-->
+<!--                      <a href="{{discordUrl}}" target="_blank" class="dark-gray-text"><i class="fab fa-discord"></i>&nbsp;Discord</a>-->
+<!--                    </li>-->
+<!--                    <li class="hidden-sm hidden-md hidden-lg">-->
+<!--                      <a href="{{uptimeStatusUrl}}" target="_blank" class="dark-gray-text"><i class="fas fa-cube"></i>&nbsp;Minecraft Server Status</a>-->
+<!--                    </li>-->
+<!--                    <li class="hidden-sm hidden-md hidden-lg">-->
+<!--                      <a href="{{uptimeStatusUrl}}" target="_blank" class="dark-gray-text"><i class="fas fa-code"></i>&nbsp;Screeps Server Status</a>-->
+<!--                    </li>-->
+<!--                    <li class="hidden-sm hidden-md hidden-lg">-->
+<!--                      <a href="{{twitchUrl}}" target="_blank" class="dark-gray-text"><i class="fab fa-twitch"></i>&nbsp;Twitch</a>-->
+<!--                    </li>-->
+<!--                    <li class="hidden-sm hidden-md hidden-lg">-->
+<!--                        <a href="{{facebookUrl}}" target="_blank" class="dark-gray-text"><i class="fab fa-facebook-square"></i>&nbsp;Facebook</a>-->
+<!--                    </li>-->
+<!--                    <li class="hidden-sm hidden-md hidden-lg">-->
+<!--                        <a href="{{instagramUrl}}" target="_blank" class="dark-gray-text"><i class="fab fa-instagram"></i>&nbsp;Instagram</a>-->
+<!--                    </li>-->
+<!--                    <li class="hidden-sm hidden-md hidden-lg">-->
+<!--                        <a href="{{subscribeUrl}}" class="dark-gray-text"><i class="fas fa-bell"></i>&nbsp;Subscribe</a>-->
+<!--                    </li>-->
+
+<!--                  <button ng-click="scrollTo('upcoming-events')" class="btn btn-blue btn-fill p-sm-14">-->
+<!--                    <i class="fa fa-calendar"></i> UPCOMING EVENTS-->
+<!--                  </button>-->
+<!--                </ul>-->
 <!--            </div>-->
 <!--        </div>-->
-<!--    </div>-->
+<!--    </nav>-->
 
 
-    <div class="section section-small section-get-started">
-        <div class="parallax filter-dark">
-            <div class="image" style="background-image: url('img/right_for_you_top.png')">
-            </div>
-            <div class="container">
-                <div class="title-area">
-                    <h2 class="text-white">Do you want to work for C Spire?</h2>
-                    <div class="separator line-separator"><i class="fas fa-power-off"></i></div>
-                    <p class="description"> From Fiber Optics to Finance, Marketing to IT, Customer Services to Cloud Services— we’re all united by a singular purpose: Be and become known as the best. We work with passion, drive, and a dedication to results. Such an elite purpose means there’s only room for the most talented team members. Are you ready to make your mark?</p>
-                </div>
-
-                <div class="button-get-started">
-                    <a href="http://www.cspire.com/careers" target="_blank" class="btn btn-blue btn-fill btn-lg">Careers</a>
-                </div>
-            </div>
+<div class="section section-header section-header-small">
+  <div class="parallax">
+    <div class="image" style="background-image: url('img/background-textured-denim-blue.png')">
+    </div>
+    <div class="container">
+      <div class="content">
+        <div class="title-area">
+          <img class="img-responsive" style="display: inline; z-index: 3;"
+               src="img/c-spire-gaming-logo_v3_w-border.svg">
         </div>
+      </div>
+    </div>
+  </div>
+  <img class="orange-stripes" src="img/orange-stripes.svg" style="position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;">
+  <img class="orange-stripes" src="img/orange-stripes_right.svg" style="position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;">
+</div>
+
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="title-area mb-0">
+        <h1>who we are</h1>
+        <div class="separator separator-blue"><i class="fas fa-power-off"></i></div>
+        <p class="description">Our purpose is to provide a fun and engaging community for C&nbsp;Spire team
+          members, friends, and family. Whether it's video games, tabletop, or eSports, we're here to bring
+          people together and celebrate all things gaming.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="upcoming-events" class="section section-our-team-freebie">
+  <div class="parallax filter">
+    <div class="image" style="background-image:url('img/Dec_18_Group_Photo-blue.jpg'); min-height: 750px;">
+    </div>
+    <div class="container">
+      <div class="content">
+        <div class="row">
+          <div class="title-area mb-0">
+            <h1 class="white-text show-on-medium-and-up" style="display: none;">connect with us</h1>
+            <h1 class="white-text show-on-small" style="display: none;">connect<br>with us</h1>
+            <div class="separator separator-white white-text"><i class="fas fa-power-off"></i></div>
+            <p class="description">Stay up to date with all our virtual and in-person events.</p>
+            <div class="row">
+              <a href="{{discordUrl}}" class="btn btn-orange btn-fill" target="_blank"><i class="fab fa-discord"></i>&nbsp;Discord</a>
+              <a href="{{twitchUrl}}" class="btn btn-orange btn-fill" target="_blank"><i class="fab fa-twitch"></i>&nbsp;Twitch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="section section-our-team-freebie">
+  <div class="container">
+    <div class="title-area">
+      <!--        <sub-head>Our awesome, randomly presented</sub-head>-->
+      <h1 class="mt-0">C&nbsp;Spire gaming Officers</h1>
+      <div class="separator separator-blue"><i class="fas fa-power-off"></i></div>
     </div>
 
+    <ul id="officers" class="nav nav-text" role="tablist">
+      <li ng-repeat="o in officers" ng-class="{active: $first}">
+        <a href="#officer{{$index}}" role="tab" data-toggle="tab">
+          <div class="image-clients">
+            <img alt="..." class="img-circle" src="img/faces/{{o.image}}"/>
+            <h3 ng-bind-html="o.name">{{o.name}}</h3>
+          </div>
+        </a>
+      </li>
+    </ul>
 
-    <footer class="footer footer-big footer-color-black" data-color="black">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="info">
-<!--                        <h5 class="title">C Spire Gaming</h5>-->
-<!--                        <nav>-->
-<!--                            <ul>-->
-<!--                                <li>-->
-<!--                                    <a href="{{emailUrl}}">Contact Us</a>-->
-<!--                                </li>-->
-<!--                            </ul>-->
-<!--                        </nav>-->
-                        <h5 class="title">C Spire</h5>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="https://www.cspire.com" target="_blank">C Spire Home</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.cspire.com/careers" target="_blank">Careers</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="info">
-                        <h5 class="title">Latest News</h5>
-                        <nav>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-facebook-square"></i> <b>New Officers!</b> We recently welcomed some new officers to the group and we're excited to be working with these lovely folks!
-                                        <hr class="hr-small">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-facebook-square"></i> We think the national sport for Minecraft should be boxing.
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div class="col-md-4" align="right">
-                    <div class="info">
-                        <h5 class="title" style="text-align: right;">Connect With Us</h5>
-                        <nav>
-                            <ul>
-                                <li>
-                                  <a href="{{discordUrl}}" target="_blank"><i class="fab fa-discord"></i>&nbsp;Discord</a>
-                                </li>
-                                <li>
-                                  <a href="{{uptimeStatusUrl}}" target="_blank"><i class="fas fa-cube"></i>&nbsp;Minecraft Server Status</a>
-                                </li>
-                                <li>
-                                  <a href="{{uptimeStatusUrl}}" target="_blank"><i class="fas fa-code"></i>&nbsp;Screeps Server Status</a>
-                                </li>
-                                <li>
-                                  <a href="{{twitchUrl}}" target="_blank"><i class="fab fa-twitch"></i>&nbsp;Twitch</a>
-                                </li>
-                                <li>
-                                    <a href="{{facebookUrl}}" target="_blank"><i class="fab fa-facebook-square"></i>&nbsp;Facebook</a>
-                                </li>
-                                <li>
-                                    <a href="{{instagramUrl}}" target="_blank"><i class="fab fa-instagram"></i>&nbsp;Instagram</a>
-                                </li>
-                                <li>
-                                    <a href="{{subscribeUrl}}" target="_blank"><i class="fas fa-bell"></i>&nbsp;Subscribe</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="copyright">
-                ©
-                <script>
-                    document.write(new Date().getFullYear())
 
-                </script> C Spire
-                <p>Stay awesome!</p>
-                <p>Made using a lovely template from <a href="http://www.creative-tim.com">Creative Tim</a></p>
-            </div>
+    <div class="tab-content">
+      <div class="tab-pane" id="officer{{$index}}" ng-repeat="o in officers" ng-class="{active: $first}">
+        <p class="description" ng-bind-html="o.about">
+          {{o.about}}
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="careers" class="section section-our-team-freebie">
+  <div class="parallax filter-dark">
+    <div class="image" style="background-image: url('img/lead-the-way.png')">
+    </div>
+    <div class="container">
+      <div class="title-area">
+        <h1 class="text-white">aspire to more with a <br><span class="blue-text">career at C&nbsp;Spire</span></h1>
+        <div class="separator line-separator"><i class="fas fa-power-off"></i></div>
+        <p class="description">We’re in search of the ambitious. The curious, the norm breakers, the never-settlers.
+          At C&nbsp;Spire, we love to innovate and live to make technology faster, smarter, better and more accessible
+          every day.</p>
+      </div>
+
+      <div class="button-get-started">
+        <a href="https://www.cspire.com/careers" target="_blank" class="btn btn-orange btn-fill">SEE CAREERS</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="footer footer-big">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="info white-text">
+          <h3 class="title blue-text"><img src="img/c-spire-vector-logo-2021.svg"></h3>
+          <br>
+          <nav style="font-size: 16px !important;">
+            <ul>
+              <li>1018 Highland Colony Pkwy</li>
+            </ul>
+            <ul>
+              <li>Suite 300</li>
+            </ul>
+            <ul>
+              <li>Ridgeland, MS 39157</li>
+            </ul>
+          </nav>
         </div>
-    </footer>
+      </div>
+      <div class="col-md-4">
+        <div class="info">
+          <h3 class="title blue-text">Company Info</h3>
+          <nav style="text-align: left;">
+            <ul>
+              <li>
+                <a href="https://www.cspire.com" target="_blank">C&nbsp;Spire Home</a>
+              </li>
+              <li>
+                <a href="https://www.cspire.com/web/company/about" target="_blank">About C&nbsp;Spire</a>
+              </li>
+              <li>
+                <a href="https://www.cspire.com/careers" target="_blank">Careers</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="col-md-4" align="left">
+        <div class="info">
+          <h3 class="title blue-text" style="text-align: left;">Connect With Us</h3>
+          <nav>
+            <ul>
+              <li>
+                <a href="{{discordUrl}}" target="_blank"><i class="fab fa-discord"></i>&nbsp;Discord</a>
+              </li>
+              <li>
+                <a href="{{twitchUrl}}" target="_blank"><i class="fab fa-twitch"></i>&nbsp;Twitch</a>
+              </li>
+              <li>
+                <a href="{{uptimeStatusUrl}}" target="_blank"><i class="fas fa-cube"></i>&nbsp;Minecraft Server
+                  Status</a>
+              </li>
+              <li>
+                <a href="{{uptimeStatusUrl}}" target="_blank"><i class="fas fa-code"></i>&nbsp;Screeps Server
+                  Status</a>
+              </li>
+              <li>
+                <a href="{{facebookUrl}}" target="_blank"><i class="fab fa-facebook-square"></i>&nbsp;Facebook</a>
+              </li>
+              <li>
+                <a href="{{instagramUrl}}" target="_blank"><i class="fab fa-instagram"></i>&nbsp;Instagram</a>
+              </li>
+              <li>
+                <a href="{{subscribeUrl}}" target="_blank"><i class="fas fa-bell"></i>&nbsp;Subscribe</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="copyright white-text" style="font-size: 12pt !important;">
+      ©
+      <script>
+        document.write(new Date().getFullYear())
+      </script>
+      C&nbsp;Spire
+      </p>
+    </div>
+  </div>
+</footer>
 
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120386744-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120386744-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+  function gtag() {
+    dataLayer.push(arguments);
+  }
 
-        gtag('config', 'UA-120386744-1');
+  gtag('js', new Date());
 
-    </script>
+  gtag('config', 'UA-120386744-1');
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+</script>
 
-    <!--   core js files    -->
-    <script src="scripts/jquery.min.js" type="text/javascript"></script>
-    <script src="scripts/bootstrap.js" type="text/javascript"></script>
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
 
-    <!--  js library for devices recognition -->
-    <script type="text/javascript" src="scripts/modernizr.js"></script>
+<!--   core js files    -->
+<script src="scripts/jquery.min.js" type="text/javascript"></script>
+<script src="scripts/bootstrap.js" type="text/javascript"></script>
 
-    <!--  script for google maps   -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+<!--  js library for devices recognition -->
+<script type="text/javascript" src="scripts/modernizr.js"></script>
 
-    <!--   file where we handle all the script from the Gaia - Bootstrap Template   -->
-    <script type="text/javascript" src="scripts/gaia.js"></script>
+<!--  script for google maps   -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
-    <!-- build:js({.tmp,app}) scripts/scripts.js -->
-    <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.js"></script>
-    <!-- endbuild -->
+<!--   file where we handle all the script from the Gaia - Bootstrap Template   -->
+<script type="text/javascript" src="scripts/gaia.js"></script>
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<!-- endbuild -->
 </body>
 
 </html>

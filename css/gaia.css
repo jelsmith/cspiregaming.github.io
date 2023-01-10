@@ -3,13 +3,13 @@
  =========================================================
  * Gaia Bootstrap Template - v1.0.1
  =========================================================
- 
+
  * Product Page: https://www.creative-tim.com/product/gaia-bootstrap-template
  * Copyright 2017 Creative Tim (http://www.creative-tim.com)
  * Licensed under MIT (https://github.com/creativetimofficial/gaia-bootstrap-template/blob/master/LICENSE.md)
- 
+
  =========================================================
- 
+
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
  */
 
@@ -264,7 +264,7 @@ a:hover {
 
 p.description {
     font-size: 16px;
-    color: #777777;
+    /*color: #777777;*/
 }
 
 a:hover,
@@ -714,8 +714,8 @@ a.btn.btn-navy.btn-fill.btn-lg {
 .open > .navbar .navbar-nav > li > a.btn-blue.btn-fill.dropdown-toggle {
     background-color: #01c0f3;
     color: #FFFFFF;
-    transform: scale(1.03);
-    box-shadow: 0 26px 50px -10px rgba(0, 0, 0, 0.38), 0 10px 20px 0px rgba(0, 0, 0, 0.2), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
+    /*transform: scale(1.03);*/
+    /*box-shadow: 0 26px 50px -10px rgba(0, 0, 0, 0.38), 0 10px 20px 0px rgba(0, 0, 0, 0.2), 0 15px 10px -10px rgba(0, 0, 0, 0.2);*/
 }
 
 .btn-blue.btn-fill .caret,
@@ -1135,7 +1135,7 @@ fieldset[disabled] .form-control {
 
 .section .title-area .description {
     font-size: 16px;
-    color: #777777;
+    /*color: #777777;*/
 }
 
 .section [class*="col-"] .title-area {
@@ -1273,7 +1273,7 @@ fieldset[disabled] .form-control {
     z-index: 3;
     content: "";
     opacity: .5;
-    background: linear-gradient(0deg, #01c0f3 0%, #0053cc 100%);
+    /*background: linear-gradient(0deg, #00C0F3 0%, #0053cc 100%);*/
     /*    background: #333;*/
 }
 
@@ -1812,7 +1812,7 @@ fieldset[disabled] .form-control {
 .footer .title {
     text-align: left;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 16pt;
     font-weight: bold;
 }
 
@@ -2394,7 +2394,7 @@ fieldset[disabled] .form-control {
 
 .section-header-small .parallax,
 .section-header-small .static-image {
-    min-height: 70vh;
+    min-height: 35vh;
     height: auto;
 }
 
@@ -3183,7 +3183,7 @@ fieldset[disabled] .form-control {
     }
     .section-header .parallax,
     .section-header .static-image {
-        height: 80vh;
+        height: 40vh;
     }
     .section-header .parallax:after,
     .section-header .static-image:after {
