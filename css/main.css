@@ -9,19 +9,19 @@
   --green: #489D4D;
 }
 
-@font-face {
-  font-family: "Comfortaa", Arial, sans-serif;
-  src: url('https://cspiregaming.com/css/fonts/Comfortaa-Medium.tff') format('ttf');
-  /*font-weight: "normal";*/
-  /*font-style: "normal";*/
-}
+/*@font-face {*/
+/*  font-family: "Comfortaa", Arial, sans-serif;*/
+/*  src: url('https://cspiregaming.com/css/fonts/Comfortaa-Medium.tff') format('ttf');*/
+/*  !*font-weight: "normal";*!*/
+/*  !*font-style: "normal";*!*/
+/*}*/
 
-@font-face {
-  font-family: "Tablet Gothic Narrow", Arial, sans-serif;
-  src: url('https://cspiregaming.com/css/fonts/Tablet Gothic Narrow W02 SmBd.ttf') format('ttf');
-  /*font-weight: "normal";*/
-  /*font-style: "normal";*/
-}
+/*@font-face {*/
+/*  font-family: "Tablet Gothic Narrow", Arial, sans-serif;*/
+/*  src: url('https://cspiregaming.com/css/fonts/Tablet Gothic Narrow W02 SmBd.ttf') format('ttf');*/
+/*  !*font-weight: "normal";*!*/
+/*  !*font-style: "normal";*!*/
+/*}*/
 
 @font-face {
   font-family: "Gotham", Arial, sans-serif;
@@ -52,20 +52,20 @@ h1 {
 }
 
 h2 {
-  font-family: "Tablet Gothic Narrow", Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-size: 22pt;
   font-weight: bold;
 }
 
 h3 {
-  font-family: "Tablet Gothic Narrow", Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-size: 17pt;
   font-weight: bold;
   color: var(--steel-blue);
 }
 
 sub-head {
-  font-family: "Tablet Gothic Narrow", Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-size: 17pt;
   font-weight: bold;
 }
@@ -116,7 +116,7 @@ nav:not(.navbar-transparent) {
 }
 
 .btn {
-  font-family: "Tablet Gothic Narrow", Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-weight: bold;
   font-size: 14pt;
   text-transform: capitalize;
