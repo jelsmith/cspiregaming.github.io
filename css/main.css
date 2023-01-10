@@ -11,40 +11,40 @@
 
 @font-face {
   font-family: "Comfortaa";
-  src: url('fonts/Comfortaa-Medium.ttf') format('ttf');
+  src: url('/css/fonts/Comfortaa-Medium.ttf') format('ttf');
   /*font-weight: "normal";*/
   /*font-style: "normal";*/
 }
 
 @font-face {
   font-family: "Tablet Gothic Narrow";
-  src: url('fonts/Tablet Gothic Narrow W02 SmBd.ttf') format('ttf');
+  src: url('/css/fonts/Tablet Gothic Narrow W02 SmBd.ttf') format('ttf');
   /*font-weight: "normal";*/
   /*font-style: "normal";*/
 }
 
 @font-face {
-  font-family: "Gotham";
-  src: url('fonts/GothamRnd-Book.otf') format('otf');
+  font-family: "Gotham", sans-serif;
+  src: url('/css/fonts/GothamRnd-Book.otf') format('otf');
   /*font-weight: "normal";*/
   /*font-style: "normal";*/
 }
 
 html {
-  font-family: "Gotham";
+  font-family: "Gotham", sans-serif;
   background: var(--c-spire-blue);
   font-size: 16pt;
   color: var(--steel-blue);
 }
 
 body {
-  font-family: "Gotham";
+  font-family: "Gotham", sans-serif;
   font-size: 16pt;
   color: var(--steel-blue);
 }
 
 h1 {
-  font-family: "Comfortaa";
+  font-family: "Comfortaa", sans-serif;
   font-size: 36pt;
   color: var(--steel-blue);
   text-transform: lowercase !important;
@@ -52,20 +52,20 @@ h1 {
 }
 
 h2 {
-  font-family: "Tablet Gothic Narrow";
+  font-family: "Tablet Gothic Narrow", sans-serif;
   font-size: 22pt;
   font-weight: bold;
 }
 
 h3 {
-  font-family: "Tablet Gothic Narrow";
+  font-family: "Tablet Gothic Narrow", sans-serif;
   font-size: 17pt;
   font-weight: bold;
   color: var(--steel-blue);
 }
 
 sub-head {
-  font-family: "Tablet Gothic Narrow";
+  font-family: "Tablet Gothic Narrow", sans-serif;
   font-size: 17pt;
   font-weight: bold;
 }
@@ -116,7 +116,7 @@ nav:not(.navbar-transparent) {
 }
 
 .btn {
-  font-family: "Tablet Gothic Narrow";
+  font-family: "Tablet Gothic Narrow", sans-serif;
   font-weight: bold;
   font-size: 14pt;
   text-transform: capitalize;
@@ -190,7 +190,7 @@ nav:not(.navbar-transparent) {
 
 #officers > li.active a .image-clients img {
   opacity: 1;
-  box-shadow: 0px 0px 0px 8px #00c0f3;
+  box-shadow: 0 0 0 8px #00c0f3;
   transition: 0.2s linear;
 }
 
@@ -199,6 +199,7 @@ nav:not(.navbar-transparent) {
     height: 50%;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .show-on-small {
     display: block !important;
