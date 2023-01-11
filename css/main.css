@@ -9,63 +9,67 @@
   --green: #489D4D;
 }
 
-/*@font-face {*/
-/*  font-family: "Comfortaa", Arial, sans-serif;*/
-/*  src: url('https://cspiregaming.com/css/fonts/Comfortaa-Medium.tff') format('ttf');*/
-/*  !*font-weight: "normal";*!*/
-/*  !*font-style: "normal";*!*/
-/*}*/
-
-/*@font-face {*/
-/*  font-family: "Tablet Gothic Narrow", Arial, sans-serif;*/
-/*  src: url('https://cspiregaming.com/css/fonts/Tablet Gothic Narrow W02 SmBd.ttf') format('ttf');*/
-/*  !*font-weight: "normal";*!*/
-/*  !*font-style: "normal";*!*/
-/*}*/
+@font-face {
+  font-family: 'TabletGothicNarrow';
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  src: url('fonts/TabletGothicNarrow-Bold.ttf') format('truetype'),
+  url('fonts/TabletGothicNarrow-Bold.woff') format('woff'),
+  url('fonts/TabletGothicNarrow-Bold.woff2') format('woff2');
+}
 
 @font-face {
-  font-family: "Gotham", Arial, sans-serif;
-  src: url('https://cspiregaming.com/css/fonts/GothamRnd-Book.otf') format('otf');
-  /*font-weight: "normal";*/
-  /*font-style: "normal";*/
+  font-family: 'Gotham';
+  src: url('fonts/GothamRnd-Book.otf') format('otf'),
+  url('fonts/GothamRndSSm-Book.ttf') format('truetype'),
+  url('fonts/GothamRndSSm-Book.woff') format('woff'),
+  url('fonts/GothamRndSSm-Book.woff2') format('woff2');
+  font-display: auto;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
 }
 
 html {
-  font-family: "Gotham", Arial, sans-serif;
+  font-family: 'Gotham', Arial, sans-serif;
   background: var(--c-spire-blue);
   font-size: 16pt;
   color: var(--steel-blue);
 }
 
 body {
-  font-family: "Gotham", Arial, sans-serif;
+  font-family: 'Gotham', Arial, sans-serif;
   font-size: 16pt;
   color: var(--steel-blue);
 }
 
 h1 {
-  font-family: "Comfortaa", Arial, sans-serif;
+  font-family: 'Comfortaa', Arial, sans-serif;
   font-size: 36pt;
   color: var(--steel-blue);
   text-transform: lowercase !important;
   margin-top: 10px;
+  font-style: normal;
+  font-weight: 700;
 }
 
 h2 {
-  font-family: "Inter", Arial, sans-serif;
+  font-family: 'TabletGothicNarrow', Arial, sans-serif;
   font-size: 22pt;
   font-weight: bold;
 }
 
 h3 {
-  font-family: "Inter", Arial, sans-serif;
+  font-family: 'TabletGothicNarrow', Arial, sans-serif;
   font-size: 17pt;
   font-weight: bold;
   color: var(--steel-blue);
 }
 
 sub-head {
-  font-family: "Inter", Arial, sans-serif;
+  font-family: 'TabletGothicNarrow', Arial, sans-serif;
   font-size: 17pt;
   font-weight: bold;
 }
@@ -116,7 +120,7 @@ nav:not(.navbar-transparent) {
 }
 
 .btn {
-  font-family: "Inter", Arial, sans-serif;
+  font-family: 'TabletGothicNarrow', Arial, sans-serif;
   font-weight: bold;
   font-size: 14pt;
   text-transform: capitalize;
