@@ -58,10 +58,6 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     image: 'rashad-collier.png',
     about: `Coding, tech knowledge and everything nerd; these were the ingredients chosen to create the perfect software developer. But Professor Utonium accidentally added an extra ingredient to the concoction: video games. Thus, <strong>Rashad Collier</strong> was born! Using his ultra-super powers, <strong>Rashad</strong> has dedicated his life to smash at fighting games and the forces of evil.`
   }, {
-    name: 'Chris<br>Ellis',
-    image: 'chris-ellis.jpg',
-    about: `By day, <strong>Chris Ellis</strong> is a project manager. By night, he maintains a 1:47 KDR (Hey, we said these people LOVED gaming, not that they were particularly good at it). <strong>Chris Ellis</strong> is one of those weirdos who actually enjoys playing Monopoly. He would love to tell you about his cats.`
-  }, {
     name: 'Burrell<br>Gee',
     image: 'burrell-gee.jpg',
     about: '<strong>Burrell Gee</strong> is a team lead and polymath who also loves all things gaming. At his best behind the GM Screen or crushing his foes on the KB&M, and as an occasional console dabbler, <strong>Burrell</strong> has been gaming since the days of Zork!'
