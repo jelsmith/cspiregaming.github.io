@@ -52,7 +52,7 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
   }, {
     name: 'Michael<br>Lamb',
     image: 'michael-lamb.png',
-    about: `<strong>Michael Lamb</strong> is a software developer during the day and a casual gamer at night. He loves board games and long walks but sticks with board games because the humidity is oppressive.`
+    about: `<strong>Michael Lamb</strong> is a software engineer and uses his talents to connect and empower Mississippi gamers. Lately he's been playing No Man's Sky. `
   }, {
     name: 'Rashad<br>Collier',
     image: 'rashad-collier.png',
