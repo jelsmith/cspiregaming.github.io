@@ -19,6 +19,7 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
   $scope.instagramUrl = 'https://www.instagram.com/cspiregaming/';
   $scope.twitterUrl = 'https://twitter.com/cspiregaming';
   $scope.subscribeUrl = 'http://eepurl.com/gjdvGT';
+  $scope.exchangeUrl = 'https://outlook.office365.com/owa/cspiregamingmembers@cspire.com/groupsubscription.ashx?action=join&source=Exchange&guid=d9fd892d-d36b-4d48-821a-1cd486f66a2d';
   $scope.uptimeStatusUrl = 'https://status.cspiregaming.com/';
 //    $scope.subscribeUrl = 'https://docs.google.com/forms/d/e/1FAIpQLScxlvs7cCmJcRvM_2DAM0G6cruxFQc_2kmYRstIAGaAnO1_IQ/viewform?usp=sf_link';
 
@@ -52,15 +53,11 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
   }, {
     name: 'Michael<br>Lamb',
     image: 'michael-lamb.png',
-    about: `<strong>Michael Lamb</strong> is a software developer during the day and a casual gamer at night. He loves board games and long walks but sticks with board games because the humidity is oppressive.`
+    about: `<strong>Michael Lamb</strong> is a software engineer and uses his talents to connect and empower Mississippi gamers. Lately he's been playing No Man's Sky. `
   }, {
     name: 'Rashad<br>Collier',
     image: 'rashad-collier.png',
     about: `Coding, tech knowledge and everything nerd; these were the ingredients chosen to create the perfect software developer. But Professor Utonium accidentally added an extra ingredient to the concoction: video games. Thus, <strong>Rashad Collier</strong> was born! Using his ultra-super powers, <strong>Rashad</strong> has dedicated his life to smash at fighting games and the forces of evil.`
-  }, {
-    name: 'Chris<br>Ellis',
-    image: 'chris-ellis.jpg',
-    about: `By day, <strong>Chris Ellis</strong> is a project manager. By night, he maintains a 1:47 KDR (Hey, we said these people LOVED gaming, not that they were particularly good at it). <strong>Chris Ellis</strong> is one of those weirdos who actually enjoys playing Monopoly. He would love to tell you about his cats.`
   }, {
     name: 'Burrell<br>Gee',
     image: 'burrell-gee.jpg',
