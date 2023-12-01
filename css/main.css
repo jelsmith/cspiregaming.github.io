@@ -9,38 +9,15 @@
   --green: #489D4D;
 }
 
-@font-face {
-  font-family: 'TabletGothicNarrow';
-  font-display: auto;
-  font-style: normal;
-  font-weight: 700;
-  font-stretch: normal;
-  src: url('fonts/TabletGothicNarrow-Bold.ttf') format('truetype'),
-  url('fonts/TabletGothicNarrow-Bold.woff') format('woff'),
-  url('fonts/TabletGothicNarrow-Bold.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Gotham';
-  src: url('fonts/GothamRnd-Book.otf') format('otf'),
-  url('fonts/GothamRndSSm-Book.ttf') format('truetype'),
-  url('fonts/GothamRndSSm-Book.woff') format('woff'),
-  url('fonts/GothamRndSSm-Book.woff2') format('woff2');
-  font-display: auto;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-}
-
 html {
-  font-family: 'Gotham', Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   background: var(--c-spire-blue);
   font-size: 16pt;
   color: var(--steel-blue);
 }
 
 body {
-  font-family: 'Gotham', Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-size: 16pt;
   color: var(--steel-blue);
 }
@@ -56,20 +33,20 @@ h1 {
 }
 
 h2 {
-  font-family: 'TabletGothicNarrow', Arial, sans-serif;
+  font-family: 'Barlow Semi Condensed', Arial, sans-serif;
   font-size: 22pt;
   font-weight: bold;
 }
 
 h3 {
-  font-family: 'TabletGothicNarrow', Arial, sans-serif;
+  font-family: 'Barlow Semi Condensed', Arial, sans-serif;
   font-size: 17pt;
   font-weight: bold;
   color: var(--steel-blue);
 }
 
 sub-head {
-  font-family: 'TabletGothicNarrow', Arial, sans-serif;
+  font-family: 'Barlow Semi Condensed', Arial, sans-serif;
   font-size: 17pt;
   font-weight: bold;
 }
@@ -120,7 +97,7 @@ nav:not(.navbar-transparent) {
 }
 
 .btn {
-  font-family: 'TabletGothicNarrow', Arial, sans-serif;
+  font-family: 'Barlow Semi Condensed', Arial, sans-serif;
   font-weight: bold;
   font-size: 14pt;
   text-transform: capitalize;
