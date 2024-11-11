@@ -78,6 +78,10 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     name: 'John<br>Richard',
     image: 'john-richard.png',
     about: 'Originally from Iowa, the world of gaming started for <strong>John Richard</strong> with GoldenEye 007, but grew into a passion with the teamwork found in Battlefield 2142 clan tournaments. Nowadays, the Mississippi humidity has encouraged him to hone his Rocket League skills in the time between braving the soccer fields, changing his newborn\'s diaper, and working as one of C Spire\'s Corporate Recruiters.'
+  }, {
+    name: 'Alyx<br>Chaivre',
+    image: 'alyx.jpg',
+    about: 'Hailing from the far off land of Delaware, Alyx Chaivre is a dedicated software developer and avid gamer; loving games of all kinds from tabletop adventures to console and pc quests! When she isn\'t hunting elusive shiny pokemon, you can find her working behind the scenes in Billing.'
   }];
 
   function getPosition(element) {
