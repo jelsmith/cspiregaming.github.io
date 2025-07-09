@@ -63,14 +63,6 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     image: 'burrell-gee.jpg',
     about: '<strong>Burrell Gee</strong> is a team lead and polymath who also loves all things gaming. At his best behind the GM Screen or crushing his foes on the KB&M, and as an occasional console dabbler, <strong>Burrell</strong> has been gaming since the days of Zork!'
   }, {
-    name: 'Marcus<br>Johnson',
-    image: 'marcus-johnson.jpg',
-    about: 'There was never a <strong>Marcus Johnson</strong> more dedicated than this one. Maybe he\'s a jack of all trades, but that doesn\'t mean he\'s not a master at NBA 2k games. You can find him on a real life court or a digital one if you are brave enough to challenge him.'
-  }, {
-    name: 'Wade<br>Meena',
-    image: 'wade-meena.jpeg',
-    about: 'The <strong>Wade Meena</strong>: a driven fighter interested in taking on all challenges and challengers. <strong>Wade</strong> eats, drinks, and sleeps Team C Spire.'
-  }, {
     name: 'Charles<br>McEuen',
     image: 'charles-mceuen.jpg',
     about: '<strong>Super Chuck</strong> aka <strong>Charles</strong> keeps himself busy with C Spire Business business but is known to enjoy getting up to some shenanigans in C Spire Gaming business. His speciality is N64 gaming.'
@@ -82,6 +74,10 @@ angular.module('cSpireGamingWebApp').controller('MainCtrl', function ($scope, $f
     name: 'Alyx<br>Chaivre',
     image: 'alyx.jpg',
     about: 'Hailing from the far off land of Delaware, Alyx Chaivre is a dedicated software developer and avid gamer; loving games of all kinds from tabletop adventures to console and pc quests! When she isn\'t hunting elusive shiny pokemon, you can find her working behind the scenes in Billing.'
+  }, {
+    name: 'Zack<br>Sistrunk',
+    image: 'zacksistrunk.png',
+    about: 'A powerhouse for integrating systems and working with client teams, <strong>Zack Sistrunk</strong> joined C Spire Gaming to show off his talents for mastering the most challenging titles in the industry. With lightning-fast reflexes and strategic thinking honed through years of competitive gaming, Zack brings a player\'s perspective to every project.'
   }];
 
   function getPosition(element) {
